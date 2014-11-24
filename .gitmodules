@@ -1,0 +1,3 @@
+[submodule "dartnews"]
+	path = dartnews
+	url = https://github.com/debjyoti385/dartnews.git
