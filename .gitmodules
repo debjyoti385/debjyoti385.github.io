@@ -1,3 +1,6 @@
 [submodule "dartnews"]
 	path = dartnews
 	url = https://github.com/debjyoti385/dartnews.git
+[submodule "chloropleth"]
+	path = chloropleth
+	url = https://github.com/debjyoti385/chloropleth.git
