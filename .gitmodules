@@ -4,3 +4,9 @@
 [submodule "choropleth"]
 	path = choropleth
 	url = https://github.com/debjyoti385/choropleth.git
+[submodule "airquality"]
+	path = airquality
+	url = https://github.com/yogeshmishra/AirQuality.git
+[submodule "AirQuality"]
+	path = AirQuality
+	url = https://github.com/yogeshmishra/AirQuality.git
