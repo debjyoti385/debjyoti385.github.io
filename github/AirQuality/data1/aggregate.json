@@ -1,0 +1,220 @@
+{
+    "summary": {
+        "avg_long": -111.68646618902419, 
+        "record_count": 984, 
+        "avg_lat": 40.47090712500011, 
+        "average_mean": 0.057702710365853636
+    }, 
+    "remainder": {}, 
+    "cells": [
+        {
+            "city": "", 
+            "record_count": 120, 
+            "avg_long": -110.67193715000009, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.30336862499997, 
+            "average_mean": 0.056688533333333326
+        }, 
+        {
+            "city": "0", 
+            "record_count": 54, 
+            "avg_long": -109.9836040555556, 
+            "parameter": "Ozone", 
+            "avg_lat": 39.21934638888891, 
+            "average_mean": 0.05610385185185186
+        }, 
+        {
+            "city": "Bountiful", 
+            "record_count": 66, 
+            "avg_long": -111.88436495454538, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.902213454545446, 
+            "average_mean": 0.05696127272727273
+        }, 
+        {
+            "city": "Brigham City", 
+            "record_count": 63, 
+            "avg_long": -112.01886300000004, 
+            "parameter": "Ozone", 
+            "avg_lat": 41.49270700000002, 
+            "average_mean": 0.05782638095238095
+        }, 
+        {
+            "city": "Cottonwood West", 
+            "record_count": 45, 
+            "avg_long": -111.84972199999994, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.64666699999999, 
+            "average_mean": 0.059311999999999976
+        }, 
+        {
+            "city": "Escalante", 
+            "record_count": 6, 
+            "avg_long": -111.61472200000001, 
+            "parameter": "Ozone", 
+            "avg_lat": 37.775556, 
+            "average_mean": 0.0512685
+        }, 
+        {
+            "city": "Harrisville", 
+            "record_count": 63, 
+            "avg_long": -111.98787100000007, 
+            "parameter": "Ozone", 
+            "avg_lat": 41.30361399999996, 
+            "average_mean": 0.05996125396825396
+        }, 
+        {
+            "city": "Highland", 
+            "record_count": 51, 
+            "avg_long": -111.80388899999988, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.43027800000003, 
+            "average_mean": 0.056962647058823514
+        }, 
+        {
+            "city": "Hurricane", 
+            "record_count": 6, 
+            "avg_long": -113.183, 
+            "parameter": "Ozone", 
+            "avg_lat": 37.129, 
+            "average_mean": 0.0532775
+        }, 
+        {
+            "city": "Logan", 
+            "record_count": 51, 
+            "avg_long": -111.83749999999993, 
+            "parameter": "Ozone", 
+            "avg_lat": 41.731111000000034, 
+            "average_mean": 0.054846627450980415
+        }, 
+        {
+            "city": "Not in a city", 
+            "record_count": 102, 
+            "avg_long": -112.1497045588236, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.665716264705914, 
+            "average_mean": 0.05937922549019607
+        }, 
+        {
+            "city": "Ogden", 
+            "record_count": 24, 
+            "avg_long": -111.97552399999996, 
+            "parameter": "Ozone", 
+            "avg_lat": 41.206321, 
+            "average_mean": 0.056515666666666665
+        }, 
+        {
+            "city": "Price", 
+            "record_count": 9, 
+            "avg_long": -110.800749, 
+            "parameter": "Ozone", 
+            "avg_lat": 39.60996, 
+            "average_mean": 0.058294444444444454
+        }, 
+        {
+            "city": "Provo", 
+            "record_count": 57, 
+            "avg_long": -111.66305600000008, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.25361100000004, 
+            "average_mean": 0.05715494736842107
+        }, 
+        {
+            "city": "Roosevelt", 
+            "record_count": 6, 
+            "avg_long": -110.009732, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.294177999999995, 
+            "average_mean": 0.05785799999999999
+        }, 
+        {
+            "city": "Salt Lake City", 
+            "record_count": 63, 
+            "avg_long": -111.87222199999998, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.73638900000001, 
+            "average_mean": 0.05784166666666665
+        }, 
+        {
+            "city": "Spanish Fork", 
+            "record_count": 57, 
+            "avg_long": -111.66050199999995, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.13633600000002, 
+            "average_mean": 0.05892664912280703
+        }, 
+        {
+            "city": "Tooele", 
+            "record_count": 33, 
+            "avg_long": -112.299618, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.543308999999994, 
+            "average_mean": 0.05580081818181819
+        }, 
+        {
+            "city": "Vernal", 
+            "record_count": 6, 
+            "avg_long": -109.51039300000001, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.452267, 
+            "average_mean": 0.055744999999999996
+        }, 
+        {
+            "city": "Virgin", 
+            "record_count": 42, 
+            "avg_long": -113.15059999999997, 
+            "parameter": "Ozone", 
+            "avg_lat": 37.19830000000001, 
+            "average_mean": 0.058938595238095255
+        }, 
+        {
+            "city": "Washington Terrace", 
+            "record_count": 33, 
+            "avg_long": -111.98305600000002, 
+            "parameter": "Ozone", 
+            "avg_lat": 41.179722000000005, 
+            "average_mean": 0.06024766666666666
+        }, 
+        {
+            "city": "West Valley", 
+            "record_count": 27, 
+            "avg_long": -111.96861099999994, 
+            "parameter": "Ozone", 
+            "avg_lat": 40.704443999999995, 
+            "average_mean": 0.058650333333333325
+        }
+    ], 
+    "total_cell_count": 22, 
+    "aggregates": [
+        "average_mean", 
+        "record_count", 
+        "avg_lat", 
+        "avg_long"
+    ], 
+    "cell": [
+        {
+            "type": "point", 
+            "dimension": "parameter", 
+            "hierarchy": "default", 
+            "level_depth": 1, 
+            "invert": false, 
+            "hidden": false, 
+            "path": [
+                "Ozone"
+            ]
+        }
+    ], 
+    "levels": {
+        "city": [
+            "city"
+        ], 
+        "parameter": [
+            "parameter"
+        ]
+    }, 
+    "attributes": [
+        "city", 
+        "parameter"
+    ], 
+    "has_split": false
+}

@@ -1,433 +1,1789 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Github pages</title>
-	<meta name="title" content="Github pages debjyoti385.github.io" />
-	<link rel="image_src" href="/images/notify_better_image.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<meta content="//git.geekological.com/index.html" property="og:url" />
-	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
-	<meta name="author" content="Debjyoti Paul">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="js/onepage_scroll.js"></script>
-  <link href='css/onepage_scroll.css' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <style>
-    html {
-      height: 100%;
-    }
-    body {
-      background: #E2E4E7;
-      padding: 0;
-      text-align: center;
-      font-family: 'open sans';
-      position: relative;
-      margin: 0;
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
-    }
-    
-    .wrapper {
-    	height: 100% !important;
-    	height: 100%;
-    	margin: 0 auto; 
-    	overflow: hidden;
-    }
-    
-    a {
-      text-decoration: none;
-    }
-    
-    
-    h1, h2 {
-      width: 100%;
-      float: left;
-    }
-    h1 {
-      margin-top: 100px;
-      color: #000;
-      margin-bottom: 5px;
-      font-size: 70px;
-      letter-spacing: -4px;
-      font-weight: 100;
-    }
-    h1 span {
-      font-size: 26px;
-      margin: 0 5px;
-      text-transform: capitalize;
-      background: rgba(0,0,0,0.85);
-      display: inline-block;
-      color: #6D461D;
-      border-radius: 5px 5px;
-      -webkit-border-radius: 5px 5px;
-      -moz-border-radius: 5px 5px;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-      padding: 3px 10px;
-    }
-    h2 {
-      color: #6D461D;
-      font-weight: 100;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-    
-    .pointer {
-      color: #9b59b6;
-      font-family: 'Pacifico', cursive;
-      font-size: 30px;
-      margin-top: 15px;
-    }
-    code {
-      margin: 20px 1%;
-      float: left;
-      width: 48%;
-      height: 105px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      border-radius: 5px;
-      padding:5px;
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
-      display: block;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
-    code.html {
-      color: #7EC9E6;
-    }
-    code.js {
-      color: #FFAD00;
-    }
+    <title>Debjyoti Paul</title>
 
-    .main {
-      float: left;
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    .main h1 {
-      padding:150px 50px;
-      float: left;
-      width: 100%;
-      font-size: 45px;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      font-weight: 100;
-      color: white;
-      margin: 0;
-    }
-   
-    .main h1.demo1 {
-      background: #1ABC9C;
-    }
-    
-    .reload.bell {
-      font-size: 12px;
-      padding: 20px;
-      width: 45px;
-      text-align: center;
-      height: 47px;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-    }
-    
-    .reload.bell #notification {
-      font-size: 25px;
-      line-height: 140%;
-    }
-    
-    .reload, .btn{
-      display: inline-block;
-      border: 4px solid #A2261E;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      background: #CC3126;
-      display: inline-block;
-      line-height: 100%;
-      padding: 0.7em;
-      text-decoration: none;
-      color: #fff;
-      width: 100px;
-      line-height: 140%;
-      font-size: 17px;
-      font-family: open sans;
-      font-weight: bold;
-    }
-    .reload:hover{
-      background: #444;
-    }
-    .btn {
-      width: 100px;
-      color: rgb(255, 255, 255);
-      border: 4px solid rgb(0, 0, 0);
-      background: rgba(3, 3, 3, 0.75);
-    }
-    .clear {
-      width: auto;
-    }
-    .btn:hover, .btn:hover {
-      background: #444;
-    }
-    .btns {
-      width: 210px;
-      margin: 1px auto;
-    }
-    .credit {
-      text-align: center;
-      color: rgba(0,0,0,0.5);
-      padding: 10px;
-      width: 410px;
-      clear: both;
-    }
-    .credit a {
-      color: rgba(0,0,0,0.85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-    
-    .back {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      text-align: center;
-      display: block;
-      padding: 7px;
-      width: 100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      background: rgba(255, 255, 255, 0.25);
-      font-weight: bold;
-      font-size: 13px;
-      color: #000;
-      -webkit-transition: all 500ms ease-in-out;
-      -moz-transition: all 500ms ease-in-out;
-      -o-transition: all 500ms ease-in-out;
-      transition: all 500ms ease-in-out;
-    }
-    .back:hover {
-      color: black;
-      background: rgba(255, 255, 255, 0.5);
-    }
-    
-    header {
-      position: relative;
-      z-index: 10;
-    }
-    .main section .page_container {
-      position: relative;
-      top: 5%;
-      margin: 0 auto 0;
-      max-width: 950px;
-      z-index: 3;
-    }
-    .main section  {
-      overflow: hidden;
-    }
-    
-    .main section > img {
-      position: absolute;
-      max-width: 100%;
-      z-index: 1;
-    }
-    
-    .main section.page1 {
-      background:rgb(230, 235, 240);
-      opacity: 50%;
-    }
-    .main section.page1 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 5px;
-      font-size: 70px;
-      color: black;
-    }
-    .main section.page1 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: left;
-      width: 435px;
-      line-height: 160%;
-    }
-    .main section .page_container .btns {
-      float: left;
-      text-align: center;
-      width: 435px;
-    }
-    .main section .page_container .btns a{
-      text-align: center;
-    }
-    .main section.page2 {
-      background: #555557 url(img/choro1.png) no-repeat center -150px ;
-    }
-    .main section.page2 > img {
-      position: absolute;
-      top: -300px;
-      left: 50%;
-      margin-left: -1095px;
-    }
-    .main section.page2 .page_container {
-      margin-top: 240px;
-      overflow: hidden;
-    }
-    .main section.page2 h1 {
-      text-align: center;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 50px;
-      letter-spacing: -1px;
-      color: white;
-    }
-    .main section.page2 h2 {
-      color: rgba(255,255,255,0.85);
-      text-align: center;
-      line-height: 160%;
-      font-weight: 100;
-    }
-    .viewing-page-2 .back{
-      background: rgba(0, 0, 0, 0.25);
-      color: #FFF;
-      }
-    .main section.page3 {
-      background:url(img/tilted-phone.png) no-repeat 156px -150px ;
-    }
-    .main section.page3 .page_container {
-      overflow: hidden;
-      width: 500px;
-      right: -285px;
-    }
-    .main section.page3 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 0;
-      font-size: 70px;
-      letter-spacing: -1px;
-      color: black;
-    }
-    .main section.page3 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: left;
-      line-height: 160%;
-      font-weight: 100;
-      font-size: 21px;
-    }
-    
-    body.disabled-onepage-scroll .onepage-wrapper  section {
-      min-height: 100%;
-      height: auto;
-    }
-    
-    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
-      padding: 20px;
-      margin-top: 150px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    
-    body.disabled-onepage-scroll  section .page_container h1{
-      text-align: center;
-      font-size: 50px;
-    }
-    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
-      text-align: center;
-      width: 100%;
-    }
-    
-    body.disabled-onepage-scroll .main section.page1 > img {
-      position: absolute;
-      width: 80%;
-      left: 10%;
-    }
-    
-    body.disabled-onepage-scroll .main section > img {
-      position: relative;
-      max-width: 80%;
-      bottom: 0;
-    }
-    body.disabled-onepage-scroll code {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
-    }
-    
-    body.disabled-onepage-scroll .main section.page3 .page_container {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      right: 0;
-    }
-	</style>
-	<script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-		});
-		
-	</script>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/images/favicon.jpg">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700' rel='stylesheet'
+          type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.mb.YTPlayer.min.css" rel="stylesheet">
+    <link href="assets/css/stroke-gap-icons.css" rel="stylesheet">
+    <link href="assets/css/simpletextrotator.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/superslides.css" rel="stylesheet">
+    <link href="assets/css/vertical.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/timeline.css" rel="stylesheet">
+
+    <!-- Template core CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Color CSS -->
+    <!--<link href="assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
+
 </head>
-<body>
-  <div class="wrapper">
-	  <div class="main">
-	      <section class="page3">
-        <div class="page_container" style="padding-left:300px;">
-          <h1>Air Quality of Utah, USA</h1>
-          <h2>Analysis and visual representation of air quality and pollution level of Utah</h2>
-          <div class="btns">
-            <a class="reload btn" href="AirQuality/">Demo</a>
-  	        <a class="reload btn" href="https://github.com/yogeshmishra/AirQuality">Github</a>
-  	      </div>
-  	    </div>
-  	    <img style="top:0%; left: 0%; width:60%; height:100%; opacity: .9; filter: alpha(opacity=90);" src="img/airquality.png"   alt="phones">
-      </section>
-	    
+<body data-spy="scroll" data-target=".navbar-custom" data-offset="70">
 
-      <section class="page1">
-        <div class="page_container">
-          <h1>Dart News</h1>
-          <h2>A street news browsing application with an interactive GIS interface</h2>
-          <div class="btns">
-            <a class="reload btn" href="dartnews/">Demo</a>
-  	        <a class="reload btn" href="https://github.com/debjyoti385/dartnews">Github</a>
-  	      </div>
-  	    </div>
-  	    <img style="top:60%; left: 0%; opacity: .9; filter: alpha(opacity=90);" src="img/dartnews.png" alt="phones">
-      </section>
-	    
-	    <section class="page2">
-	      <div class="page_container">
-          <h1>Choropleth India</h1>
-          <h2>Thematic map of India with its states and disticts (ajax load on district map)</h2>
-          <h5 style="font-style: italic;">Disclaimer: Map discrepancies may exist</h5>
-          <div class="btns" style="float:center;">
-            <a class="reload btn" href="choropleth/">States</a>
-            <a class="reload btn" href="choropleth/ajax/">Districts</a>
-  	        <a class="reload btn" href="https://github.com/debjyoti385/choropleth">Github</a>
-  	      </div>
-      </section>
-	    
-	    <!-- <section class="page3"> -->
-	    <!--   <div class="page_container"> -->
-        <!--   <h1>Coming Soon</h1> -->
+<!-- PRELOADER -->
+<div class="page-loader">
+    <div class="loader">Loading...</div>
+</div>
+<!-- /PRELOADER -->
 
-      <!-- </section> -->
+<!-- NAVIGATION -->
+<nav class="navbar navbar-fixed-top navbar-custom navbar-transparent">
+
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- YOU LOGO HERE -->
+            <a class="navbar-brand" href="#hero">
+                <!-- IMAGE OR SIMPLE TEXT -->
+                <img class="light-logo" src="assets/images/plogo.png" width="120" alt="" style="margin-left: -32px; margin-top: 5px;">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="custom-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="#hero" class="section-scroll">Home</a></li>-->
+                <li><a href="#intro" class="section-scroll">Intro</a></li>
+                <li><a href="#resume" class="section-scroll">Resume</a></li>
+                <li><a href="#profile" class="section-scroll">Profile</a></li>
+                <li><a href="#publications" class="section-scroll">Publications</a></li>
+                <li><a href="#projects" class="section-scroll">Projects</a></li>
+                <!-- <li><a href="#skills" class="section-scroll">Skills</a></li> -->
+                <li><a href="#achievements" class="section-scroll">Achievements</a></li>
+                <!-- <li><a href="#passion" class="section-scroll">Passion</a></li> -->
+            </ul>
+        </div>
+
     </div>
-    <a class="back" href="http://geekological.com/">Back to geekological</a><!--
-    <a href="https://github.com/peachananr/onepage-scroll"><span style="position: absolute; bottom: 10px; right: 100px;font-size: 13px; color: #000;">powered by onescroll.js</span></a> -->
-    <a href="https://github.com/peachananr/onepage-scroll"><span style="position: absolute; bottom: 10px; right: 50px;font-size: 13px; color: #000;">powered by onescroll.js</span><img style="position: absolute; bottom: 10px; right: 200px; border: 0; width:20px;" src="img/gitfork.png" alt="Fork onescroll on GitHub"></a>
-  </div>
+
+</nav>
+<!-- /NAVIGATION -->
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+    <!-- HERO -->
+    <section id="hero" class="module-hero module-overlay-dark-1 js-fullheight"
+             data-background="assets/images/creative/project.jpg">
+
+        <!-- HERO TEXT -->
+        <div class="hero-caption">
+            <div class="hero-text">
+                <h1 class="hero-title m-t-70"> It's easy when you're doing things you love <br>
+                        <!-- I'm <span
+                        class="rotate"> a Researcher  | a Photographer | a Coder </span> -->
+                    <br><br/></h1>
+                <div style="margin-top: 150px;">
+                    <img class="img-circle" src="assets/images/scroll-down.png" style="width:150px;"> </img>
+                </div>
+                <!--<p class="lead  m-b-60"><br/> Life is too short not to be happy. </p>-->
+                <!-- <a href="#intro" class="section-scroll btn btn-round btn-dark" style="margin-top:10px; opacity: 0.8;">know
+                    more ..</a> -->
+            </div>
+        </div>
+        <!-- /HERO TEXT -->
+
+        <!-- Video URL https://vimeo.com/173016094  https://www.youtube.com/watch?v=9d8wWcJLnFI-->
+        <div class="video-player" data-property="{
+				videoURL: 'https://www.youtube.com/watch?v=uam3reOyLFg',
+				containment: '#hero',
+                quality: 'hd720',
+                optimizeDisplay: true,
+				startAt: 0,
+				autoPlay: true,
+				loop: true,
+				opacity: 1,
+				showControls: true,
+				realfullscreen: true,
+				remember_last_time: true,
+				useOnMobile: true,
+				showYTLogo: false,
+				vol: 0,
+				mute: true
+				}">
+        </div>
+
+    </section>
+    <!-- /HERO -->
+
+    <!-- INTRO -->
+    <section id="intro" class="module module-w p-b-0" style="padding: -120px 0 50px 0;">
+        <div class="container">
+
+            <div class="row" style="margin-bottom:50px;margin-top:-50px;">
+
+                <!-- ABOUT TEXT -->
+                <div class="col-md-6" >
+                    <div class="m-t-sm-0" style="margin:-10px;">
+                        <h5>Welcome, I am Dr. Debjyoti Paul | ডঃ দেবজ্যোতি পাল </h5>
+                        <!-- <p class="shiftup-25">In short my friends call me <b>Deb</b></p> -->
+                        <p class="shiftup-20">A PhD graduate from <a
+                                href="https://www.cs.utah.edu/" target="_blank"> School of Computing,  University of Utah, USA. </a><br/>
+                            An alumnus of <a href="https://www.cse.iitk.ac.in" target="_blank">Computer Science Department, IIT Kanpur, India. </a>
+                        </p>
+                        <h6>Research Interests</h6>
+                        <p class="shiftup-20">
+                          Spatio-Temporal Data Analysis, Social Media Analysis, Healthcare Analytics, Representation Learning, Deep Learning, Machine Learning, Data Visualization
+                        <h6>Office Address</h6>
+                        <p class="shiftup-25">Room 2780 WEB Building </p>
+                        <p class="shiftup-25">72 S. Central Campus Drive</p>
+                        <p class="shiftup-25">School of Computing, University of Utah</p>
+                        <p class="shiftup-25">Salt Lake City, UT 84112</p>
+
+                        <h6>Contact</h6>
+                        <p class="shiftup-20"> <span id="email_div"></span> </p>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /ABOUT TEXT -->
+
+                <!-- LOGOS -->
+                <div class="col-md-3" style="margin-top:80px;">
+                    <div class="hidden-sm hidden-xs">
+                        <img src="assets/images/utah_logo.png"
+                             style="height:100px; padding-right: 50px; margin-bottom: 10px; vertical-align: middle"
+                             alt="">
+                    </div>
+                    <div class="hidden-sm hidden-xs">
+                        <img src="assets/images/iitk_logo_black.png" style="height:100px;padding-left: 20px;" alt="">
+                    </div>
+                </div>
+
+                <!--  <div class="hidden-sm hidden-xs shiftup-25">-->
+                <!--      <img src="assets/images/flogo.png" style="height:70px;padding-left: 20px; margin-top: 40px;" alt="">-->
+                <!--      <img src="assets/images/amazon1.png" style="height:75px;padding-left: 20px;margin-top: 45px; " alt="">-->
+                <!--  </div>-->
+                <!--  <div class="hidden-sm hidden-xs shiftup-25">-->
+                <!--      <img src="assets/images/flipkart_logo.png" style="height:75px;padding-left: 20px;margin-top: 45px; " alt="">-->
+                <!--  </div>-->
+                <!-- /LOGOS -->
+
+                <!-- PHOTO -->
+                <div class="col-md-3">
+                    <div class="hidden-sm hidden-xs">
+                        <img class="img-circle" src="assets/images/01.jpg" style="width:250px;" alt="">
+                    </div>
+
+
+                    <div class="social-icons text-center m-t-40 m-b-10">
+                        <a href="https://www.linkedin.com/in/debjyotipaul385" target="_blank" alt="facebook"
+                           class="fa fa-linkedin facebook"></a>
+                        <a href="https://github.com/debjyoti385" target="_blank" alt="github"
+                           class="fa fa-github github"></a>
+                        <a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank"
+                           class="fa fa-flickr flickr"></a>
+                        <a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram"
+                           class="fa fa-instagram instagram"></a>
+                        <a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook"
+                           class="fa fa-facebook facebook"></a>
+                        <!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
+                        <!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
+                        <!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
+                        <!--<a href="#" target="_blank" class="fa fa-dribbble dribbble"></a>-->
+                        <!--<a href="#" target="_blank" class="fa fa-foursquare foursquare"></a>-->
+                    </div>
+                    <div class="social-icons text-center m-b-10">
+                        <a href="https://mytravelessence.com" target="_blank" alt="facebook"
+                           class="fa fa-photo facebook"></a>
+                        <a href="http://geekological.com" target="_blank" alt="github"
+                           class="fa fa-wordpress github"></a>
+                        <!--<a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank" class="fa fa-flickr flickr"></a>-->
+                        <!--<a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram" class="fa fa-instagram instagram"></a>-->
+                        <!--<a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook" class="fa fa-facebook facebook"></a>-->
+                        <!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
+                        <!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
+                        <!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
+                        <!--<a href="#" target="_blank" class="fa fa-dribbble dribbble"></a>-->
+                        <!--<a href="#" target="_blank" class="fa fa-foursquare foursquare"></a>-->
+                    </div>
+
+
+                </div>
+                <!-- /PHOTO -->
+
+            </div>
+        </div>
+    </section>
+    <!-- /INTRO -->
+
+    <!-- RESUME IMAGE -->
+    <section id="resume" class="module module-parallax module-overlay-dark-5" style="padding: 120px 0 50px 0;"
+             data-background="assets/images/creative/sunset.jpg">
+        <div class="container">
+
+            <!-- MODULE TITLE -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center shiftup-20">
+                    <div class="module-title"> Resume</div>
+                    <div class="shiftup-30 m-b-20"><a href="https://rawgit.com/debjyoti385/resume/master/debjyoti_paul_resume.pdf" target="_blank"><i
+                            class="fa fa-file-pdf-o fa-4x"></i></a>
+                    </div>
+                    <!--<h3 class="module-subtitle m-b-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of decided to leave.</h3>-->
+                </div>
+            </div>
+            <!-- /MODULE TITLE -->
+
+        </div>
+    </section>
+    <!-- /RESUME IMAGE -->
+
+    <!-- PROFILE -->
+    <section id="profile" class="module-sm module-g" style="padding: 90px 0 0 0;">
+        <div class="container">
+
+                <!-- RESUME COLUMN -->
+                <!-- <div class="row">
+                    <div class="col-sm-6">
+                      <div class="profile wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="profile-icon" style="margin-left:20px;">
+                            <span class="icon icon-CompassTool"></span>
+                            <span class="profile-title">Academic</span>
+                        </div>
+                        <hr class="divider divider-gross">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="profile wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="profile-icon" style="margin-left:20px;">
+                                <span class="icon icon-Tie"></span>
+                                <span class="profile-title">Experience</span>
+                            </div>
+
+                            <hr class="divider divider-gross">
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="row">
+                    <div class="col-sm-1"> </div>
+                    <div class="col-sm-5">
+                      <div class="profile wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="profile-icon" style="margin-left:20px;">
+                            <span class="icon icon-CompassTool"></span>
+                            <span class="profile-title">Academic</span>
+                        </div>
+                        <hr class="divider divider-gross">
+                      </div>
+
+                      <ul class="timeline">
+
+
+
+                          <li class="event" data-date="2015-2020">
+                            <div class="profile-content">
+                                <h6 style="@media (max-width: 768px){padding-bottom:30px;}"><i class="fa fa-briefcase" aria-hidden="true"> </i>&nbsp; Teaching and Responsibilities </h6>
+                                <!-- <p style="margin-bottom:0px;"><b>Teaching</b></p><br/> -->
+                                <p>
+                                  <span style="margin-top:10px;"><b>Teaching</b></span><br/>
+                                  1. Advance Database Systems (Fall 2017, 3 Lectures)<br/>
+                                <!--<ul style="list-style: none">-->
+                                    <!--<li><a href="https://youtu.be/lPm9ff4Jo-8" target="_blank"><i>Relational Algebra</i></a>-->
+                                    <!--</li>-->
+                                    <!--<li><a href="https://youtu.be/Mhc7pWnfU_c" target="_blank"><i>SQL</i></a></li>-->
+                                <!--</ul>-->
+                                2. Data Mining (Spring 2017, 1 Lecture)<br/>
+                                3. Natural Language Processing (Fall 2016, 1 Lecture)</br>
+                                <span style="margin-top:10px;"><b>Reviewer</b></span><br/>
+                                1. IEEE Transactions on Knowledge and Data Engineering (TKDE)<br/>
+                                2. International Conference on Very Large Data Bases (VLDB)<br/>
+                                3.  International Conference on Data Engineering (ICDE)
+
+                                </p>
+                                <!--<ul style="list-style: none">-->
+                                    <!--<li><a href="https://youtu.be/zeKVIUjM2fo?t=33m47s" target="_blank"> <i>Noise in-->
+                                        <!--Data</i></a></li>-->
+                                <!--</ul>-->
+                                <!-- <p ><a href="https://www.utah.edu/" target="_blank"><b>University of Utah</b></a></br></p> -->
+                            </div>
+                        <li class="event" data-date="2015-2019">
+                          <div class="profile-content">
+                              <h6><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; University of Utah</h6>
+                              <p>Doctor of Philosophy</p>
+                              <p class="shiftup-25">Computer Science</p>
+                              <p class="shiftup-25">GPA: 3.94/4.0</p>
+                              <p class="shiftup-25">Advisor: Prof. Feifei Li</p>
+                          </div>
+
+                        <li class="event" data-date="2011-2013">
+                          <div class="profile-content">
+                              <h6 style="overflow: hidden;max-height: 1.6em;"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Indian Institute of Technology Kanpur</h6>
+                              <p>Master of Technology </p>
+                              <p class="shiftup-25">Computer Science & Engineering</p>
+                              <p class="shiftup-25"> GPA: 8.67/10.0 (Rank: 3)</p>
+                              <p class="shiftup-25"> Advisor: Late Prof. Sanjeev Kumar Aggarwal</p>
+
+                          </div>
+
+                        <li class="event" data-date="2007-2011">
+                          <div class="profile-content">
+                              <h6 style="overflow: hidden;max-height: 1.6em;"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Institute of Engineering & Management</h6>
+                              <p>Bachelor of Technology (Rank < 10)</p>
+                              <p class="shiftup-25"> Computer Science & Engineering</p>
+                              <p class="shiftup-25">GPA: 8.93/10.0</p>
+                          </div>
+                      </ul>
+                    </div>
+                <!-- /RESUME COLUMN -->
+
+                <!-- RESUME COLUMN -->
+                    <div class="col-sm-1"> </div>
+
+                    <div class="col-sm-5">
+                      <div class="profile wow fadeInUp" data-wow-delay="0.1s">
+                          <div class="profile-icon" style="margin-left:20px;">
+                              <span class="icon icon-Tie"></span>
+                              <span class="profile-title">Experience</span>
+                          </div>
+
+                          <hr class="divider divider-gross">
+                      </div>
+
+                      <ul class="timeline">
+
+                      <li class="event" data-date="2020">
+                        <div class="profile-content">
+                            <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Facebook </h6>
+                            <p>Research Scientist</p>
+                            <!-- <p class="shiftup-25">Pages search improvement with AI</p> -->
+                            <p class="shiftup-25">AI Speech</p>
+                            <p class="shiftup-25" style="margin-bottom: -25px;">Location: Menlo Park, USA</p>
+
+                        </div>
+
+                        <li class="event" data-date="2019">
+                          <div class="profile-content">
+                              <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Alibaba Group </h6>
+                              <p>Research Intern</p>
+                              <!-- <p class="shiftup-25">Pages search improvement with AI</p> -->
+                              <p class="shiftup-25">Mentors: Feifei Li, Tieying Zhang, Hong Wu</p>
+                              <p class="shiftup-25" style="margin-bottom: -25px;">Location: Sunnyvale, USA</p>
+
+                          </div>
+
+                        <li class="event" data-date="2018">
+                          <div class="profile-content">
+                              <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Facebook</h6>
+                              <p>Summer Research Intern</p>
+                              <p class="shiftup-25">Pages search improvement with AI</p>
+                              <p class="shiftup-25">Mentor: Shawn Poindexter</p>
+                              <p class="shiftup-25" style="margin-bottom: -25px;">Location: Seattle, USA</p>
+
+                          </div>
+
+                        <li class="event" data-date="2017">
+                          <div class="profile-content">
+                              <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Amazon AI Lab</h6>
+                              <p>Summer Research Intern</p>
+                              <p class="shiftup-25">Hyperparameter optimization in MxNet</p>
+                              <p class="shiftup-25">Mentors: Baris Coskun, Ramesh Nallapati</p>
+                              <p class="shiftup-25" style="margin-bottom: -25px;">Location: New York, USA</p>
+                          </div>
+
+                        <li class="event" data-date="2015-2018">
+                          <div class="profile-content">
+                              <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; University of Utah</h6>
+                              <p>Research Assistant</p>
+                              <p class="shiftup-25">InitialDLab, Database and data analysis Group</p>
+                              <p class="shiftup-25" style="margin-bottom: -25px;">School of Computing</p>
+                          </div>
+
+                        <li class="event" data-date="2013-2015">
+                          <div class="profile-content">
+                              <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Flipkart</h6>
+                              <p>Software Developer (Data Engineer)</p>
+                              <p class="shiftup-25">Data Platform Team</p>
+                              <p class="shiftup-25">Built scalable environment for BigData processing.</p>
+                              <p class="shiftup-25">Contributed in building softwares for Ingestion, Transformation and Distribution of data. </p>
+                              <p class="shiftup-25" style="margin-bottom: -25px;">Location: Bangalore, India. </p>
+                          </div>
+
+
+                      </ul>
+                    </div>
+                </div>
+
+                <!-- RESUME COLUMN -->
+                <!-- <div class="col-sm-6">
+                    <div class="profile wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="profile-icon">
+                            <span class="icon icon-Tie"></span>
+                        </div>
+                        <h3 class="profile-title">Experience</h3>
+                        <hr class="divider divider-gross m-b-30">
+
+                        <div class="shiftup-30 profile-content">
+                            <p class="shiftup-25"><a
+                                    href="https://www.utah.edu/"
+                                    target="_blank"><img
+                                    style="margin-bottom:-5px;height:50px;"
+                                    src="assets/images/u.png"
+                                    alt="University of Utah">&nbsp;&nbsp;&nbsp;&nbsp;<b>University of Utah</b></a></br></p>
+                            <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Research Assistant (2015- <i>current</i>)</h6>
+                            <p> Advisor: <a href="http://www.cs.utah.edu/~lifeifei/" target="_blank">Prof. Feifei Li</a>
+                            </p>
+                               </br>
+                        </div>
+
+                        <div class="profile-content">
+                            <p class="shiftup-25"><a
+                                    href="https://research.fb.com/category/machine-learning/"
+                                    target="_blank"> <img
+                                    style="margin-bottom:-5px;height:50px;"
+                                    src="assets/images/facebook-logo.png"
+                                    alt="Facebook">&nbsp;&nbsp;&nbsp;&nbsp;<b> Facebook, Inc.</b></p></a>
+                            <h6><i class="fa fa-briefcase" aria-hidden="true"> </i>&nbsp; PhD Machine Learning Intern (Summer 2018), Seattle</h6>
+                            <p> Advisors: <a href="https://www.linkedin.com/in/shawnpoindexter/" target="_blank">Shawn Poindexter</a></br>
+                               </p>
+                               </br>
+                        </div>
+
+                        <div class="profile-content">
+                            <p class="shiftup-25"><a
+                                    href="https://aws.amazon.com/amazon-ai/"
+                                    target="_blank"> <img
+                                    style="margin-bottom:-5px;height:50px;
+                                    width:50px;"
+                                    src="assets/images/amazon1.png"
+                                    alt="Amazon AI">&nbsp;&nbsp;&nbsp;&nbsp;<b>Amazon AI Lab</b></p></a>
+                            <h6><i class="fa fa-briefcase" aria-hidden="true"> </i>&nbsp; Research Scientist Intern (Summer 2017)i, New York</h6>
+                            <p> Advisors: <a href="http://isis.poly.edu/~baris/" target="_blank">Baris Coskun,</a><a
+                                    href="https://edoliberty.github.io/" target="_blank"> Edo Liberty</a></br>
+                                Mentors: <a href="https://scholar.google.com/citations?user=mZcPPW4AAAAJ" target="_blank">Ramesh Nallapati,</a><a
+                                        href="https://sites.google.com/site/zoharkarnin/" target="_blank"> Zohar Karnin</a></p>
+                               </br>
+                        </div>
+
+
+
+                        <div class="profile-content shiftup-25">
+                            <p class="shiftup-25"><a
+                                    href="https://flipkart.com/"
+                                    target="_blank"><img
+                                    style="margin-bottom:-5px;width:130px;"
+                                    src="assets/images/flipkart_logo.png"
+                                    alt="Flipkart"></a>
+                            <a href="http://flipkart.com" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;<b>Flipkart</b></a></p>
+                            <h6><i class="fa fa-briefcase" aria-hidden="true"> </i>&nbsp; Software Developer (2013-2015)</h6>
+                            <p>Data Platform Team: Exceeds Expectation for year 2014 </p>
+                        </div>
+                    </div>
+                <!-- </div>  -->
+                <!-- /RESUME COLUMN -->
+
+
+                <!-- RESUME COLUMN -->
+                <!-- <div class="col-sm-4">
+                    <div class="profile wow fadeInUp">
+                        <div class="profile-icon">
+                            <span class="icon icon-Cup"></span>
+                        </div>
+                        <h3 class="profile-title">Hackathon Awards</h3>
+                        <hr class="divider divider-gross m-b-30">
+                        <div class="profile-content">
+                            <h6><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; [2017] <a href="http://hacktheu.com" target="_blank">MLH HackTheU 2017 </a> <a
+                                    href="https://github.com/debjyoti385/parakeets"
+                                    target="_blank">| Project: Parakeet</a></h6>
+                            <p> Winner </p>
+                            <p class="shiftup-25"> Out of 50+ teams</p>
+                        </div>
+                        <div class="profile-content">
+                            <h6><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; [2016] <a href="http://www.emc.com/en-us/index.htm" target="_blank"> EMC2 {Code} </a> <a
+                                    href="https://github.com/emccode/mars-challenge/blob/master/documentation/Mars-challenge-instructions.md"
+                                    target="_blank">Mars Challenge Hackathon</a></h6>
+                            <p> Winner </p>
+                            <p class="shiftup-25"> Out of 45 teams</p>
+                        </div>
+                        <div class="profile-content shiftup-40">
+                            <h6><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; [2015] Goldman Sachs <a href="http://github.debjyotipaul.in/AirQuality/"
+                                                        target="_blank">Air Quality Hackathon</a></h6>
+                            <p> 1st Runners-up </p>
+                            <p class="shiftup-25">Out of 30 teams</p>
+                        </div>
+                        <div class="profile-content shiftup-40">
+                            <h6><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; [2014] <a href="http://www.inmobi.com/" target="_blank"> InMobi</a> <a
+                                    href="assets/files/hackathon_report_2014.pdf" target="_blank">Freedom Hack Worldwide
+                                Hackathon</a></h6>
+                            <p> 1st Runners-up</p>
+                            <p class="shiftup-25"> Out of 160 teams </p>
+                        </div>
+                        <div class="profile-content shiftup-40">
+                            <h6><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; [2013] Yahoo HackU Hackathon</h6>
+                            <p>Winner</p>
+                            <p class="shiftup-25"> Out of 40 teams</p>
+                        </div>
+
+                    </div>
+                </div> -->
+                <!-- /RESUME COLUMN -->
+
+        </div>
+    </section>
+    <!-- /PROFILE -->
+
+    <!-- PUBLICATION IMAGE -->
+    <section id="publications" class="module module-parallax module-overlay-dark-5" style="padding: 90px 0 0 0;"
+             data-background="assets/images/creative/pen.jpg">
+        <div class="container">
+
+            <!-- MODULE TITLE -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="module-title"> Publications </h2>
+                    <!--<h3 class="module-subtitle m-b-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of decided to leave.</h3>-->
+                </div>
+            </div>
+            <!-- /MODULE TITLE -->
+
+        </div>
+    </section>
+    <!-- /PUBLICATION IMAGE -->
+
+    <!-- PUBLICATION TEXT -->
+    <section id="publication_text" class="module-sm module-w" style="padding: 90px 0 0 0;">
+        <div class="container">
+            <div class="row">
+
+
+              <!-- PUBLICATION COLUMN -->
+              <div class="col-sm-12">
+                  <div class="m-b-70">
+                      <h5><b>AI Pro: Data Processing Framework for AI Models</b></h5>
+                      <h6 class="shiftup-20">Richie Frost, <b>Debjyoti Paul</b>, Feifei Li.</h6>
+                      <h6 class="shiftup-20"> 35th IEEE International Conference on Data Engineering (ICDE 2019), 8-12 April, 2019. Macau, China. doi: <a href="http://dx.doi.org/10.1109/ICDE.2019.00219" target="_blank">10.1109/ICDE.2019.00219</a></h6>
+                      <p class="shiftup-20"> [<a data-toggle="collapse" href="#02_ICDE2019">Abstract</a>] | [<a href="assets/pub/aipro-icde19.pdf" target="_blank">Link</a>] | [<a href="assets/pub/aipro-icde19.pdf" target="_blank">pdf</a>] | [<a href="assets/pub/aipro-icde19-poster.pdf" target="_blank">poster</a>]</p>
+                      <div id="02_ICDE2019" class="collapse" >
+                      <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                              <b>Abstract</b></br>
+                        We present AI Pro, an open-source framework for data processing with Artificial Intelligence (AI) models. Our framework empowers its users with immense capability to transform raw data into meaningful information with a simple configuration file. AI Pro’s configuration file generates a data pipeline from start to finish with as many data transformations as desired. AI Pro supports major deep learning frameworks and Open Neural Network Exchange (ONNX), which allows users to choose models from any AI frameworks supported by ONNX. Its wide range of features and user friendly web interface grants everyone the opportunity to broaden their AI application horizons, irrespective of the user’s technical expertise. AI Pro has all the quintessential features to perform end-to-end data processing, which we demonstrate using two real world scenarios.
+                              </p>
+                        </blockquote>
+                      </div>
+                  </div>
+              </div>
+              <!-- /PUBLICATION COLUMN -->
+
+
+              <!-- PUBLICATION COLUMN -->
+              <div class="col-sm-12">
+                  <div class="m-b-70">
+                      <h5><b>Bursty Event Detection Throughout Histories</b></h5>
+                      <h6 class="shiftup-20"><b>Debjyoti Paul</b>, Yanqing Peng, Feifei Li.</h6>
+                      <h6 class="shiftup-20"> 35th IEEE International Conference on Data Engineering (ICDE 2019), 8-12 April, 2019. Macau, China. doi: <a href="http://dx.doi.org/10.1109/ICDE.2019.00124" target="_blank">10.1109/ICDE.2019.00124.</a></h6>
+                      <p class="shiftup-20"> [<a data-toggle="collapse" href="#01_ICDE2019">Abstract</a>] | [<a href="assets/pub/bursty-icde19.pdf" target="_blank">Link</a>] | [<a href="assets/pub/bursty-icde19.pdf" target="_blank">pdf</a>] | [<a href="assets/pub/bursty-icde19-poster.pdf" target="_blank">poster</a>]</p>
+                      <div id="01_ICDE2019" class="collapse" >
+                      <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                              <b>Abstract</b></br>
+                                The widespread use of social media and the active trend of moving towards more web- and mobile-based reporting for traditional media outlets have created an avalanche of information streams. These information streams bring in first-hand reporting on live events to massive crowds in real time as they are happening. It is important to study the phenomenon of burst in this context so that end-users can quickly identify important events that are emerging and developing in their early stages. In this paper, we investigate the problem of bursty event detection where we define burst as the acceleration over the incoming rate of an event mentioning. Existing works focus on the detection of current trending events, but it is important to be able to go back in time and explore bursty events throughout the history, while without the needs of storing and traversing the entire information stream from the past. We present a succinct probabilistic data structure and its associated query strategy to find bursty events at any time instance for the entire history. Extensive empirical results on real event streams have demonstrated the effectiveness of our approach.
+                              </p>
+                        </blockquote>
+                      </div>
+                  </div>
+              </div>
+              <!-- /PUBLICATION COLUMN -->
+
+                <!-- PUBLICATION COLUMN -->
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>Geotagged US Tweets as Predictors of County-Level Health Outcomes, 2015–2016</b></h5>
+                        <h6 class="shiftup-20">Quynh C. Nguyen, Matt McCullough, Hsien-wen Meng, <b>Debjyoti Paul</b>,
+                            Dapeng Li, Suraj Kath, Geoffrey Loomis, Elaine O. Nsoesie, Ming Wen, Ken R. Smith, Feifei
+                            Li.</h6>
+                        <h6 class="shiftup-20">American Journal of Public Health, September, 2017, doi: <a href="http://dx.doi.org/10.2105/AJPH.2017.303993" target="_blank">10.2105/AJPH.2017.303993</a></h6>
+                        <p class="shiftup-20"> [<a data-toggle="collapse" href="#AJPH2017">Abstract</a>] | [<a href="http://dx.doi.org/10.2105/AJPH.2017.303993" target="_blank">Link</a>] | [<a href="assets/pub/county-health-ajph17.pdf" target="_blank">pdf</a>]</p>
+                        <div id="AJPH2017" class="collapse" >
+                        <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                                <b>OBJECTIVES:</b></br>
+                                Scarcity of consistently constructed environmental characteristics limits
+                                understanding of the impact of contextual factors on health. Our aim was to leverage
+                                geotagged Twitter data to create national indicators of the social environment, with
+                                small-area indicators of prevalent sentiment and social modeling of health behaviors.
+                                We then test associations with county-level health outcomes, controlling for
+                                demographic characteristics.</br>
+                                <b>METHODS:</b></br>
+                                We utilized Twitter's Streaming Application
+                                Programming Interface (API) to continuously collect a random 1% subset of publicly
+                                available geo-located tweets. Approximately 80 million geotagged tweets from 603,363
+                                unique Twitter users were collected in a 12-month period (April 2015- March 2016).</br>
+                                <b>RESULTS:</b></br>
+                                Across 3135 US counties, Twitter indicators of happiness, food, and physical
+                                activity were associated with lower premature mortality, obesity, and physical
+                                inactivity.
+                                Alcohol use tweets predicted higher alcohol-use related mortality.</br>
+                                <b>CONCLUSIONS:</b></br>
+                                Social
+                                media represents a new type of real-time data that may enable public health officials to
+                                examine movement of norms, sentiment, and behaviors that may portend emerging
+                                issues or outbreaks—thus providing a way to intervene to prevent adverse health
+                                events and measure the impact of health interventions.</p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PUBLICATION COLUMN -->
+
+                <!-- PUBLICATION COLUMN -->
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>Compass: Spatio Temporal Sentiment Analysis of US Election, &nbsp;</b><i>What twitter
+                            says!</i></h5>
+                        <h6 class="shiftup-20"><b>Debjyoti Paul</b>, Feifei Li, Murali Krishna Teja, Yu Xin, Richie
+                            Frost</h6>
+                        <h6 class="shiftup-20">SIGKDD 2017, 23rd SIGKDD Conference on Knowledge Discovery and Data Mining, Aug 13-17,
+                            Halifax, Canada. doi: <a href="http://dx.doi.org/10.1145/3097983.3098053" target="_blank">10.1145/3097983.3098053</a></h6>
+                        <p class="shiftup-20">
+                                [<a data-toggle="collapse" href="#KDD2017">Abstract</a>] | [<a
+                                href="assets/pub/compass-kdd17.pdf"
+                                target="_blank">pdf</a>] | [<a
+                                href="http://www.kdd.org/kdd2017/papers/view/compass-spatio-temporal-sentiment-analysis-of-us-election"
+                                target="_blank">link</a>] | [<a
+                                href="https://youtu.be/ylCelvdIa2I"
+                                target="_blank">Video</a>] </p>
+                        <div id="KDD2017" class="collapse" >
+                        <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                                <b>Abstract</b></br>
+                                With the widespread growth of various social network tools and
+                                platforms, analyzing and understanding societal response and crowd reaction to important
+                                and emerging social issues and events through social media data is increasingly an
+                                important problem. However, there are numerous challenges towards realizing this goal
+                                effectively and efficiently, due to the unstructured and noisy nature of social media
+                                data. The large volume of the underlying data also presents a fundamental challenge.
+                                Furthermore, in many application scenarios, it is often interesting, and in some cases
+                                critical, to discover patterns and trends based on geographical and/or temporal
+                                partitions, and keep track of how they will change overtime. This brings up the
+                                interesting problem of spatio-temporal sentiment analysis from large-scale social media
+                                data. This paper investigates this problem through a data science project called ``US
+                                Election 2016, What Twitter Says’‘. The objective is to discover sentiment on twitter
+                                towards either the democratic or the republican party at US county and state levels over
+                                any arbitrary temporal intervals, using a large collection of geotagged tweets from a
+                                period of 6 months leading up to the US presidential election in 2016. Our results
+                                demonstrate that by integrating and developing a combination of machine learning and
+                                data management techniques, it is possible to do this at scale with effective outcomes.
+                                The results of our project have the potential to be adapted towards solving and
+                                influencing other interesting social issues such as building neighborhood happiness and
+                                health indicators.</p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PUBLICATION COLUMN -->
+
+
+                <!-- PUBLICATION COLUMN -->
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>Social media indicators of the food environment and state health outcomes</b></h5>
+                        <h6 class="shiftup-20">Nguyen. Quynh, Meng. H, Li. D, Kath. Suraj, McCullough. Matt,<b> Paul.
+                            Debjyoti</b>, Kanokvimankul. P, Nguyen. T, Li. Feifei,</h6>
+                        <h6 class="shiftup-20">Public Health, American Public Health Association, 148, 120-128. doi: <a
+                                href="https://doi.org/10.1016/j.puhe.2017.03.013" target="_blank">
+                            10.1016/j.puhe.2017.03.013</a></h6>
+                        <p class="shiftup-20">
+                            [<a data-toggle="collapse" href="#APHA2017">Abstract</a>] | [<a href="assets/pub/state-health-apha17.pdf"
+                                                   target="_blank">pdf</a>] | [<a
+                                href="https://hashtaghealth.github.io/" target="_blank">link</a>] </p>
+                        <div class="collapse" id="APHA2017">
+                        <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                                <b>OBJECTIVES:</b></br>
+                                Contextual factors can influence health through exposures to health-promoting and
+                                risk-inducing factors. The aim of this study was to (1) build, from geotagged Twitter
+                                and Yelp data, a national food environment database and (2) to test associations between
+                                state food environment indicators and health outcomes.</br>
+                                <b>STUDY DESIGN:</b></br>
+                                This is a cross-sectional study based upon secondary analyses of publicly available
+                                data.</br>
+                                <b>METHODS:</b></br>
+                                Using Twitter's Streaming Application Programming Interface (API), we collected and
+                                processed 4,041,521 food-related, geotagged tweets between April 2015 and March 2016.
+                                Using Yelp's Search API, we collected data on 505,554 unique food-related businesses. In
+                                linear regression models, we examined associations between food environment
+                                characteristics and state-level health outcomes, controlling for state-level differences
+                                in age, percent non-Hispanic white, and median household income.</br>
+                                <b>RESULTS:</b></br>
+                                A one standard deviation increase in caloric density of food tweets was related to
+                                higher all-cause mortality (+46.50 per 100,000), diabetes (+0.75%), obesity (+1.78%),
+                                high cholesterol (+1.40%), and fair/poor self-rated health (2.01%). More burger Yelp
+                                listings were related to higher prevalence of diabetes (+0.55%), obesity (1.35%), and
+                                fair/poor self-rated health (1.12%). More alcohol tweets and Yelp bars and pub listings
+                                were related to higher state-level binge drinking and heavy drinking, but lower
+                                mortality and lower percent reporting fair/poor self-rated health. Supplemental analyses
+                                with county-level social media indicators and county health outcomes resulted in finding
+                                similar but slightly attenuated associations compared to those found at the state
+                                level.</br>
+                                <b>CONCLUSIONS:</b></br>
+                                Social media can be utilized to create indicators of the food environment that are
+                                associated with area-level mortality, health behaviors, and chronic conditions.</br>
+                            </p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PUBLICATION COLUMN -->
+
+                <!-- PUBLICATION COLUMN -->
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>Multi-objective Evolution based Dynamic Job Scheduler in Grid</b></h5>
+                        <h6 class="shiftup-20"><b>Debjyoti Paul</b>, Sanjeev K. Aggarwal,</h6>
+                        <h6 class="shiftup-20">The 8th International Conference on Complex, Intelligent, and Software Intensive Systems
+                            (CISIS 2014), July 2nd – 4th, 2014, Birmingham, UK. doi:<a href="https://dx.doi.org/10.1109/CISIS.2014.50" target="_blank">10.1109/CISIS.2014.50</a></h6>
+                        <p class="shiftup-20">
+                            [<a data-toggle="collapse" href="#CISIS2014">Abstract</a>] | [<a href="assets/pub/modjs.pdf" target="_blank">pdf</a>] | [<a
+                                href="assets/pub/modjs.pdf" target="_blank">link</a>] </p>
+                        <div class="collapse" id="CISIS2014">
+                        <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                                <b>Abstract</b></br>
+                                Grid computing is a high performance computing environment to
+                                fulfill large-scale computational demands. It can integrate computational as well as
+                                storage resources from different networks and geographically dispersed organizations
+                                into a high performance computational & storage platform. It is used to solve complex
+                                computational-intensive problems, and also provide solution to storage-intensive
+                                applications with connected storage resources. Scheduling of user jobs properly on the
+                                heterogeneous resources is an important task in a grid computing environment. The main
+                                goal of scheduling is to maximize resource utilization, minimize waiting time of jobs,
+                                reduce energy consumption, minimize cost to the user after satisfying constraints of
+                                jobs and resources. We can trade off between the required level of quality of service,
+                                the deadline and the budget of user. In this paper, we propose a Multi-objective
+                                Evolution-based Dynamic Scheduler in Grid. Our scheduler have used Multi-objective
+                                optimization technique using Genetic algorithm with pareto front approach to find
+                                efficient schedules. It explores the search space vividly to avoid stagnation and
+                                generate near optimal solution. We propose that our scheduler provides a better grip on
+                                most features of grid from perspective of grid owner as well as user. Dynamic grid
+                                environment has forced us to make it a real time dynamic scheduler. A job grouping
+                                technique is proposed for grouping fine-grained jobs and for ease of computation.
+                                Experimentation on different data sets and on various parameters revealed effectiveness
+                                of multi- objective scheduling criteria and extraction of performance from grid
+                                resource.</p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PUBLICATION COLUMN -->
+
+                <!-- PUBLICATION COLUMN -->
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>RCached-tree: An Index Structure for Efficiently Answering Popular Queries</b></h5>
+                        <h6 class="shiftup-20">Manash Pal, Arnab Bhattacharya, <b>Debjyoti Paul</b></h6>
+                        <h6 class="shiftup-20">ACM International Conference on Information and Knowledge Management (CIKM 2013), Oct.
+                            27–Nov. 1, 2013, San Francisco, CA, USA. doi:<a href="https://doi.org/10.1145/2505515.2507817" target="_blank">10.1145/2505515.2507817</a></h6>
+                        <p class="shiftup-20">
+                            [<a data-toggle="collapse" href="#CIKM2013">Abstract</a>] | [<a href="assets/pub/RCached_tree.pdf" target="_blank">pdf</a>] | [<a
+                                href="http://dx.doi.org/10.1145/2505515.2507817" target="_blank">link</a>] </p>
+                        <div class="collapse" id="CIKM2013">
+                        <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                                <b>Abstract</b></br>
+                                In many applications of similarity searching in databases, a set
+                                of similar queries appear more frequently. Since it is rare that a query point with its
+                                associated parameters (range or number of nearest neighbors) will repeat exactly,
+                                intelligent caching mechanisms are required to efficiently answer such queries. In
+                                addition, the performance of non-repeating and non-cached queries should not suffer too
+                                much either. In this paper, we propose RCached-tree, belonging to the family of R-trees,
+                                that aims to solve this problem. In every internal node of the tree up to a certain
+                                level, a portion of the space is reserved for storing popular queries and their
+                                solutions. For a new query that is encompassed by a cached query, this enables bypassing
+                                the traversal of lower levels of the subtree corresponding to the node as the answers
+                                can be obtained directly from the result set of the cached query. The struc- ture adapts
+                                itself to varying query patterns; new popular queries replace the old cached ones that
+                                are not popular any more. Queries that are not popular as well as insertions, deletions
+                                and updates are handled in the same manner as in a general R-tree. Experiments show that
+                                the RCached-tree can outperform R-tree and other such structures by a signif- icant
+                                margin when the proportion of popular queries is 20% or more by reserving 30-40% of the
+                                internal nodes as cache.</p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PUBLICATION COLUMN -->
+
+                <!-- PUBLICATION COLUMN -->
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>Lightweight Security Enhancement Protocol for Radio Frequency Identification(RFID)</b>
+                        </h5>
+                        <h6 class="shiftup-20"><b>Debjyoti Paul</b>, Sumana Basu, Sukanya Ghosh</h6>
+                        <h6 class="shiftup-20">Proceedings of International Conference on Scientific Paradigm Shift In Information
+                            Technology & Management (SPSITM 2011), January 2011, Kolkata, INDIA.</h6>
+                        <p class="shiftup-20">
+                            [<a data-toggle="collapse" href="#SPSITM2011">Abstract</a>] | [<a href="assets/pub/LSEP_RFID.pdf" target="_blank">pdf</a>] | [<a
+                                href="http://scholar.google.co.in/citations?view_op=view_citation&amp;hl=en&amp;user=xSy7SxUAAAAJ&amp;citation_for_view=xSy7SxUAAAAJ:u5HHmVD_uO8C"
+                                target="_blank">google scholar</a>]</p>
+                        <div class="collapse" id="SPSITM2011">
+                        <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                                <b>Abstract</b></br>
+                                Though RFID provides automatic object identification, yet it is
+                                vulnerable to various security threats that put consumer and organization privacy at
+                                stake. In this work, we have considered some existing security protocols of RFID system
+                                and analyzed the possible security threats at each level. We have modified those parts
+                                of protocol that have security loopholes and thus finally proposed a modified four-level
+                                security model that has the potential to provide fortification against security
+                                threats.</p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PUBLICATION COLUMN -->
+
+                <!-- PUBLICATION COLUMN -->
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>Multilevel Security Protocol using Radio Frequency Identification</b></h5>
+                        <h6 class="shiftup-20"><b>Debjyoti Paul</b>, Sumana Basu, Punit Beriwal</h6>
+                        <h6>IEEE Paper, International Conference on Emerging Trends in Mathematics and Computer
+                            Applications–2010 Page no-544 to 547 , Sivakasi, Tamil Nadu.</h6>
+                        <p class="shiftup-20">[<a
+                                href="assets/pub/Multilevel%20Security%20Protocol%20using%20Radio%20Frequency.pdf"
+                                target="_blank">pdf</a>] </p>
+                        <hr class="divider divider-gross m-b-30">
+                    </div>
+                </div>
+                <!-- /PUBLICATION COLUMN -->
+
+            </div>
+        </div>
+    </section>
+    <!-- PUBLICATION TEXT -->
+
+
+    <!-- PROJECTS IMAGE -->
+    <section id="projects" class="module module-parallax module-overlay-dark-5" style="padding: 120px 0 50px 0;"
+             data-background="assets/images/creative/project.jpg">
+        <div class="container">
+
+            <!-- MODULE TITLE -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="module-title"> Projects and Skills</h2>
+                    <!--<h3 class="module-subtitle m-b-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of decided to leave.</h3>-->
+                </div>
+            </div>
+            <!-- /MODULE TITLE -->
+
+        </div>
+    </section>
+    <!-- /PROJECTS IMAGE -->
+
+    <!-- PROJECTS TEXT -->
+    <section id="projects_text" class="module-sm module-w p-b-0">
+        <div class="container">
+
+            <!-- PORTFOLIO FILTER -->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+            <!--<ul id="filters" class="filters">-->
+            <!--<li><a href="#" class="current" data-filter="*">All</a></li>-->
+            <!--<li><span>&frasl;</span> <a href="#" data-filter=".branding">Branding</a></li>-->
+            <!--<li><span>&frasl;</span> <a href="#" data-filter=".design">Design</a></li>-->
+            <!--<li><span>&frasl;</span> <a href="#" data-filter=".photo">Photo</a></li>-->
+            <!--<li><span>&frasl;</span> <a href="#" data-filter=".video">Video</a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!-- /PORTFOLIO FILTER -->
+
+        </div>
+
+        <div class="works-grid-wrapper">
+            <div id="works-grid" class="works-grid works-grid-gutter works-grid-dark">
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item design video">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/election_2016.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Twitter Election 2016 Sentiment Analysis,
+                                <small>What Twitter says!</small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/election_2016.html','Twitter Election 2016 Sentiment Analysis, <small>What Twitter says!</small></h3>');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/election_2016.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a class=" video-popup" href="https://www.youtube.com/watch?v=ylCelvdIa2I"
+                               target="_blank"><i class="fa fa-file-movie-o fa-lg"></i></a> |
+                            <a href="http://estorm.org" target="_blank"><i class="fa fa-external-link fa-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item branding">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/musicatlas.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">MusicAtlas -
+                                <small>Music Wordwide!</small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/musicatlas.html','MusicAtlas - <small>Music Wordwide!</small>');"
+                           class="work-link"></a>
+                        <a class="work-popup video-popup" href="assets/images/projects/musicatlas.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/MusicAtlas/musicatlas" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            | <a class=" video-popup" href="https://www.youtube.com/watch?v=afVEXWe9Xfg"
+                                 target="_blank"><i class="fa fa-file-movie-o fa-lg"></i></a>
+                            | <a href="http://musicatlas.info/" target="_blank"><i
+                                class="fa fa-external-link fa-lg"></i></a>
+                        </div>
+
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/quakeanalysis.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">QuakeAnalysis</h3>
+                            <h6 class="work-category"><a href="#">Description</a></h6>
+                        </div>
+                        <a href="#projects_text" onclick="getModal('projects/quakeanalysis.html','QuakeAnalysis');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/quakeanalysis.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/quakeanalysis" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            | <a href="http://github.debjyotipaul.in/quakeanalysis/" target="_blank"><i
+                                class="fa fa-external-link fa-lg"></i></a>
+                            | <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank"><i
+                                class="fa fa-wikipedia-w fa-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/onlineClustering.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Online Topic Discovery via Online Clustering</h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/topicdiscovery.html','Online Topic Discovery via Online Clustering');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/onlineClustering.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/OnlineTopicDiscovery" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            | <a href="https://github.com/debjyoti385/OnlineTopicDiscovery/blob/master/report.pdf"
+                                 target="_blank"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/qa_poster.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Question Answering System</h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/qasystem.html','Question Answering System');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/qa_poster.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/QuestionAnswerNLP/" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            <!--| <a  href="https://github.com/debjyoti385/OnlineTopicDiscovery/blob/master/report.pdf" target="_blank"><i class="fa fa-external-link fa-lg"></i></a> -->
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/metonym.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Metonym:
+                                <small>Learn vocabulary with Wordweb interactively</small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/metonym.html','Metonym: <small>Learn vocabulary with Wordweb interactively</small>');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/metonym.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <!--<a  href="https://github.com/yogeshmishra/AirQuality" target="_blank"><i class="fa fa-github fa-lg"></i></a>-->
+                            <a href="http://metonym.in" target="_blank"><i class="fa fa-external-link fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/dartnews.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Dart News:
+                                <small>A street news browsing application with an interactive GIS interface</small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/dartnews.html','Dart News:  <small>A street news browsing application with an interactive GIS interface</small>');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/dartnews.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/dartnews" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            | <a href="http://github.debjyotipaul.in/dartnews/" target="_blank"><i
+                                class="fa fa-external-link fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div  style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/choropleth.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Choropleth :
+                                <small>Indian States and Districts</small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/choropleth.html','Choropleth :  <small>Indian States and Districts</small>');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/choropleth.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/choropleth" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            | <a href="http://github.debjyotipaul.in/choropleth/ajax/" target="_blank"><i
+                                class="fa fa-external-link fa-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/intelliad.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">IntelliAd:
+                                <small>A Social Media driven Intelligent Ad-Targeting framework using Geo-profiling
+                                </small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/intelliad.html','IntelliAd: <small>A Social Media driven Intelligent Ad-Targeting framework using Geo-profiling');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/intelliad.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/intelliad" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            <!--<a  href="http://metonym.in" target="_blank"><i class="fa fa-external-link fa-lg"></i></a>-->
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/www.jpg" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Multi-objective Evolution based Dynamic Job Scheduler in Grid </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/modjs.html','Multi-objective Evolution based Dynamic Job Scheduler in Grid ');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/www.jpg"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/MOJSGrid" target="_blank"> <i
+                                    class="fa fa-github fa-lg"></i></a>
+                            | <a href="assets/pub/modjs_thesis.pdf" target="_blank"><i
+                                class="fa fa-file-pdf-o fa-lg"></i></a>
+                            | <a href="assets/pub/MOJS_Presentation.pdf" target="_blank"><i
+                                class="fa fa-file-powerpoint-o fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/RCached.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">RCached-tree:
+                                <small>An Index Structure for Efficiently Answering Popular Queries</small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/rcached.html','RCached-tree: <small>An Index Structure for Efficiently Answering Popular Queries</small>');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/RCached.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="assets/pub/RCached_tree.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+                            | <a href="https://github.com/debjyoti385/rtree_data" target="_blank"><i
+                                class="fa fa-database fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/airquality.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">AirQuality @ Utah</h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text" onclick="getModal('projects/airquality.html','AirQuality @ Utah');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/airquality.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/yogeshmishra/AirQuality" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            | <a href="http://github.debjyotipaul.in/AirQuality/" target="_blank"><i
+                                class="fa fa-external-link fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div  style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/statchit.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">STaCHIT :
+                                <small>Smart TimeLine and Chit-Chat (Yahoo HackU Winner 2012)</small>
+                            </h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/stachit.html','STaCHIT :  <small>Smart TimeLine and Chit-Chat (Yahoo HackU Winner 2012)</small>');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/statchit.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="https://github.com/debjyoti385/stachit" target="_blank"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/speech.jpg" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Real time discrimination of Speech and Music</h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/speech.html','Real time discrimination of Speech and Music');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/speech.jpg"><i
+                                class="fa fa-expand"></i></a>
+                        <!--<div class="work-popup2">-->
+                            <!--<a href="https://github.com/debjyoti385/stachit" target="_blank"><i-->
+                                    <!--class="fa fa-github fa-lg"></i></a>-->
+                        <!--</div>-->
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+                <!-- PORTFOLIO ITEM -->
+                <article class="work-item photo">
+                    <div class="work-wrapper">
+                        <div style="height:250px;" class="work-thumbnail">
+                            <img src="assets/images/projects/fr.png" alt="">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="work-title">Cryptography-Diffie-Hellman Key Exchange Through Elliptic Curve
+                                Method</h3>
+                            <h6 class="work-category"><a href="#"></a></h6>
+                        </div>
+                        <a href="#projects_text"
+                           onclick="getModal('projects/crypto.html','Cryptography-Diffie-Hellman Key Exchange Through Elliptic Curve Method');"
+                           class="work-link"></a>
+                        <a class="work-popup image-popup" href="assets/images/projects/fr.png"><i
+                                class="fa fa-expand"></i></a>
+                        <div class="work-popup2">
+                            <a href="assets/files/projelliptic_main.doc" target="_blank"><i
+                                    class="fa fa-file-pdf-o fa-lg"></i></a>
+                            <!--| <a href="https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Home" target="_blank">wiki</a>-->
+                        </div>
+                    </div>
+                </article>
+                <!-- /PORTFOLIO ITEM -->
+
+            </div>
+        </div>
+
+    </section>
+    <!-- /PROJECTS TEXT -->
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="module-sm module-g" style="padding: 150px 0 0 0;">
+        <div class="container">
+            <div class="row">
+
+                <!-- RESUME COLUMN -->
+                <div class="col-sm-12 shiftup-20">
+                    <div class="profile shiftup-40">
+                        <div class="profile-icon">
+                            <span class="icon icon-Medal"></span>
+                            <span class="profile-title" style="font-family: 'Source Sans Pro', serif; margin: 0 0 25px; line-height: 1.4; font-weight: 400; color: #111;">Skills</span>
+                        </div>
+                        <hr class="divider divider-gross m-b-30">
+
+                        <h6 class="progress-title">Language: Python, Java</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-def" aria-valuenow="98" role="progressbar"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                <span><span class="progress-value"></span>%</span>
+                            </div>
+                        </div>
+
+
+                        <h6 class="progress-title">Language: C++,C</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-def" aria-valuenow="95" role="progressbar"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                <span><span class="progress-value"></span>%</span>
+                            </div>
+                        </div>
+
+                        <h6 class="progress-title">Databases: MySQL, HP Vertica, PostGRE SQL</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-def" aria-valuenow="93" role="progressbar"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                <span><span class="progress-value"></span>%</span>
+                            </div>
+                        </div>
+
+                        <h6 class="progress-title">Scripts: Javascript, Shell Script, D3.js, Three.js, LaTeX</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-def" aria-valuenow="92" role="progressbar"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                <span><span class="progress-value"></span>%</span>
+                            </div>
+                        </div>
+
+
+                        <h6 class="progress-title">Softwares etc.: Vim, OhMyZsh, IntellijIDEA, Eclipse, WebStorm</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-def" aria-valuenow="90" role="progressbar"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                <span><span class="progress-value"></span>%</span>
+                            </div>
+                        </div>
+
+                        <h6 class="progress-title">Tid-Bits: Apache Spark, Data Warehousing, Hadoop, Azkaban2 & Oozie
+                            (Exec engines), Maven</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-def" aria-valuenow="85" role="progressbar"
+                                 aria-valuemin="0" aria-valuemax="100">
+                                <span><span class="progress-value"></span>%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /RESUME COLUMN -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /SKILLS -->
+
+    <!-- ACHIEVEMENTS IMAGE -->
+    <section id="achievements" class="module module-parallax module-overlay-dark-5" style="padding: 120px 0 50px 0;"
+             data-background="assets/images/creative/grandcanyon.jpg">
+        <div class="container">
+
+            <!-- MODULE TITLE -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="module-title"> Achievements </h2>
+                </div>
+            </div>
+            <!-- /MODULE TITLE -->
+
+        </div>
+    </section>
+    <!-- /ACHIEVEMENTS IMAGE -->
+
+    <!-- ACHIEVEMENTS TEXT -->
+    <section id="achievements_text" class="module-sm module-w">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <blockquote>
+                    Spatio-temporal Sentiment Analysis Project <a href="http://estorm.org"
+                                                                  target="_blank">estorm.org</a> analyzed the sentiment
+                    of common people on US Election. It gained a lot of media coverage. (2016)<br/>
+                    <a href="https://unews.utah.edu/make-america-tweet-again/" target="_blank"><img
+                            src="assets/images/media/unews.png" style="height:20px;"></img></a>
+                    | <a href="http://www.sltrib.com/home/4536497-155/university-of-utah-software-gauges-popular"
+                         target="_blank"><img src="assets/images/media/logo_sltrib_black.png"
+                                              style="height:20px;"></img></a>
+                    | <a
+                        href="http://economictimes.indiatimes.com/news/international/world-news/tweet-sentiments-predict-hillary-clinton-the-winner/articleshow/55242173.cms"
+                        target="_blank"><img src="assets/images/media/TheEconomicTimes.png" style="height:20px;"></img></a>
+                    | <a href="http://scienmag.com/make-america-tweet-again/" target="_blank"><img
+                        src="assets/images/media/science_mag.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.business-standard.com/article/news-ians/tweet-sentiments-predict-hillary-clinton-the-winner-116110400330_1.html"
+                        target="_blank"><img src="assets/images/media/business_standard.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.bgr.in/news/twitters-sentiments-analysis-predicts-hillary-clinton-the-winner-of-us-presidential-election-2016/"
+                        target="_blank"><img src="assets/images/media/bgr_logo_black_500.png"
+                                             style="height:20px;"></img></a>
+                    | <a href="http://phys.org/news/2016-11-america-tweet.html" target="_blank"><img
+                        src="assets/images/media/physorg-logo.jpg" style="height:20px;"></img></a>
+                    | <a
+                        href="http://indiatoday.intoday.in/story/tweet-sentiment-analysis-predicts-hillary-clinton-win/1/802350.html"
+                        target="_blank"><img src="assets/images/media/logo_it.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.rediff.com/news/report/early-us-voters-shatter-polling-record-tweet-analysis-predicts-hillary-win/20161104.htm"
+                        target="_blank"><img src="assets/images/media/rediff.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.news18.com/news/tech/tweet-sentiments-predict-hillary-clinton-will-be-the-next-potus-1308130.html"
+                        target="_blank"><img src="assets/images/media/news18.png" style="height:20px;"></img></a>
+                    | <a href="http://www.eurasiareview.com/02112016-make-america-tweet-again/" target="_blank"><img
+                        src="assets/images/media/erlogo.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.newindianexpress.com/world/2016/nov/04/tweet-sentiments-predict-hillary-clinton-the-winner-1534919.html"
+                        target="_blank"><img src="assets/images/media/newindianexpress.png" style="height:20px;"></img></a>
+                    and many more..
+                </blockquote>
+                <blockquote>
+                    Building a National Neighborhood Dataset From Geotagged Twitter Data for Indicators of Happiness,
+                    Diet, and Physical Activity. JMIR 2016. Amassed a lot of media attention. <br/>
+                    <a href="http://time.com/4533176/coffee-pizza-tweet-twitter-social-media/" target="_blank"><img
+                            src="assets/images/media/time.png" style="height:20px;"></img></a>
+                    | <a href="http://www.nbcnews.com/health/health-news/coffee-beer-win-twitter-food-fight-n667626"
+                         target="_blank"><img src="assets/images/media/nbcnews.jpeg" style="height:20px;"></img></a>
+                    | <a href="http://www.reuters.com/article/us-health-twitter-surveillance-idUSKCN12I2DT"
+                         target="_blank"><img src="assets/images/media/reuters.png" style="height:20px;"></img></a>
+                    | <a href="http://health.usnews.com/health-care/articles/2016-10-18/health-highlights-oct-18-2016"
+                         target="_blank"><img src="assets/images/media/usnews.png" style="height:20px;"></img></a>
+                    | <a href="https://www.yahoo.com/style/most-frequently-tweeted-foods-tell-234417933.html"
+                         target="_blank"><img src="assets/images/media/yahoonews.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.bgr.in/news/top-ten-tweeted-foods-in-us-has-only-one-healthy-food-in-the-list-study/"
+                        target="_blank"><img src="assets/images/media/bgr_logo_black_500.png"
+                                             style="height:20px;"></img></a>
+                    | <a
+                        href="http://economictimes.indiatimes.com/magazines/panache/top-10-tweeted-food-list-chicken-top-of-the-table/articleshow/54898290.cms"
+                        target="_blank"><img src="assets/images/media/TheEconomicTimes.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.newindianexpress.com/lifestyle/food/2016/oct/17/top-10-food-tweets-contain-just-one-healthy-item-us-study-1528846.html"
+                        target="_blank"><img src="assets/images/media/newindianexpress.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://zeenews.india.com/entertainment/and-more/top-10-tweeted-food-list-has-just-one-healthy-item_1940867.html"
+                        target="_blank"><img src="assets/images/media/zeenews.jpeg" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.ndtv.com/health/top-10-food-tweets-contain-just-one-healthy-item-us-study-1475286"
+                        target="_blank"><img src="assets/images/media/ndtv.png" style="height:20px;"></img></a>
+                    | <a
+                        href="http://www.hindustantimes.com/health-and-fitness/top-10-tweeted-food-items-chicken-is-the-healthiest-thing-on-the-list/story-7PrMM9a92wLSyhyrGdis1L.html"
+                        target="_blank"><img src="assets/images/media/hindustantimes.png"
+                                             style="height:20px;"></img></a>
+                </blockquote>
+                <blockquote>
+                    Ranked 3rd out of 39 M.Tech students of CSE department in <a href="http://cse.iitk.ac.in"
+                                                                                 target="_blank"> Indian of Institute
+                    Technology, Kanpur</a> M.Tech (2011-2013)
+                    <a href="http://iitk.ac.in" target="_blank"><img src="assets/images/iitk_logo_black.png"
+                                                                     style="height: 50px;"></a>
+                </blockquote>
+                <blockquote>
+                    Secured All India Rank 228 in <a
+                        href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering" target="_blank"> GATE
+                    2012 </a> among 1.56 lakh participants of Computer Science &amp;
+                    Information Technology department. (2011-2012)
+                    <img src="assets/images/iitk_logo_black.png" style="height: 50px;">
+                </blockquote>
+                <blockquote>
+                    Achieved All India Rank of 7 in <a href="http://isro.gov.in" target="_blank">Indian Space Research
+                    Organization (ISRO)</a> recruitment exam. (2011-2012)
+                    <a href="http://isro.gov.in" target="_blank"><img src="assets/images/media/isro.png"
+                                                                      style="height: 50px;"></a>
+                </blockquote>
+                <blockquote> Secured All India Rank 223 in <a
+                        href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering" target="_blank"> GATE
+                    2011 </a> among 1.36 lakh participants of Computer
+                    Science &amp; Information Technology department. (2010-2011)
+                    <img src="assets/images/iitk_logo_black.png" style="height: 50px;">
+                </blockquote>
+                <blockquote> Amongst top 10 student of CSE department in <a href="http://iem.edu.in/" target="_blank">
+                    Institute of Engineering Management</a>,
+                    Kolkata, and awarded academic excellence for performance in B.Tech (2007-2011)
+                    <img src="assets/images/iem.jpg" style="height: 50px;">
+                </blockquote>
+                <blockquote> Acknowledged as the Best Project by the course professor for “Boosting performance of
+                    popular queries” which was done as part of CS618 (Indexing and Searching of Databases) course.
+                    (2011-2012)
+                    <img src="assets/images/iitk_logo_black.png" style="height: 50px;">
+                </blockquote>
+                <blockquote> Got 2nd Rank in Project Fair in Bits to Bytes 2008, in Most Economic Autonomous Line
+                    Follower Robot and 3rd position in Dzyan IEM Techfest 2008 in Roborally event.
+                </blockquote>
+                <blockquote>
+                    Awarded 2nd prize for academic excellence in school in Class XII
+                    <img src="assets/images/bms.jpg" style="height: 50px;">
+                </blockquote>
+                <blockquote>
+                    Awarded 1st prize for academic excellence in school in Class XI
+                    <img src="assets/images/bms.jpg" style="height: 50px;">
+                </blockquote>
+                <blockquote>
+                    Awarded academic excellence certificate in district level for performance in Board Exam
+                </blockquote>
+            </div>
+        </div>
+
+    </section>
+    <!-- /ACHIEVEMENTS TEXT -->
+
+
+    <!-- PASSION IMAGE -->
+    <section id="passion" class="module module-parallax module-overlay-dark-5" style="padding: 120px 0 50px 0;"
+             data-background="assets/images/creative/fireworks.jpg">
+        <div class="container">
+
+            <!-- MODULE TITLE -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="module-title">things interest me</h2>
+                    <!--<h3 class="module-subtitle m-b-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of decided to leave.</h3>-->
+                </div>
+            </div>
+            <!-- /MODULE TITLE -->
+
+        </div>
+    </section>
+    <!-- /PASSION IMAGE -->
+
+    <!-- PASSION TEXT -->
+    <!-- <section id="passion_text" class="module-sm module-g">
+        <div class="container">
+            <h6 class="module-title"> Timelapse Videos</h6>
+            <div class="row shiftup-40">
+                <div class="col-sm-4">
+                    <iframe src="https://player.vimeo.com/video/182338564?byline=0&portrait=0" width="320" height="240"
+                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-4">
+                    <iframe src="https://player.vimeo.com/video/180675118?byline=0&portrait=0" width="320" height="240"
+                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-4">
+                    <iframe src="https://player.vimeo.com/video/173016094?byline=0&portrait=0" width="320" height="240"
+                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row m-t-10">
+                <div class="col-sm-4">
+                    <iframe src="https://player.vimeo.com/video/172950745?byline=0&portrait=0" width="320" height="240"
+                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-4">
+                    <iframe src="https://player.vimeo.com/video/170484158?byline=0&portrait=0" width="320" height="240"
+                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-4">
+                    <iframe src="https://player.vimeo.com/video/156931337?byline=0&portrait=0" width="320" height="240"
+                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <h6 class="module-title m-t-30"> Images: got 500+ likes.. </h6>
+            <div class="row shiftup-40">
+                <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                <iframe src="//lightwidget.com/widgets/a3d9d3a83913564b812b9df16fdc6fb3.html" scrolling="no"
+                        allowtransparency="true" class="lightwidget-widget"
+                        style="width: 100%; border: 0; overflow: hidden;"></iframe>
+            </div>
+            <div id="more" class="row ">
+                <div class="col-sm-12 text-center">
+
+                    <a href="https://www.instagram.com/wandererdeb/" target="_blank" style=" opacity: 0.8;"><i
+                            class="fa fa-instagram instagram fa-4x"></i></a>
+                    <a href="https://www.flickr.com/photos/144241296@N05/" target="_blank" style=" opacity: 0.8;"><i
+                            class="fa fa-flickr flickr fa-4x"></i></a>
+                    <br/>
+                    <div class="btn btn-round btn-dark" style="vertical-align: text-top;"> more</div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!-- /PASSION TEXT -->
+
+
+    <!-- PASSION IMAGE -->
+    <section id="map-passion" class="module module-parallax module-overlay-dark-5" style="padding: 120px 0 50px 0;"
+             data-background="assets/images/creative/sunset.jpg">
+        <div class="container">
+
+            <!-- MODULE TITLE -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center shiftup-20">
+                    <div class="module-title"> Reach Me </div>
+                    <!--<div class="shiftup-30 m-b-20">-->
+                        <!--<a href="assets/files/debjyoti_paul_resume.pdf" target="_blank"><i-->
+                            <!--class="fa fa-file-pdf-o fa-4x"></i></a>-->
+                    <!--</div>-->
+                    <!--<h3 class="module-subtitle m-b-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of decided to leave.</h3>-->
+                </div>
+            </div>
+            <!-- /MODULE TITLE -->
+
+        </div>
+    </section>
+    <!-- /PASSION IMAGE -->
+
+    <!-- GOOGLE MAP -->
+    <section class="module-map">
+        <!-- ADD YOUR ADDRESS HERE -->
+        <div id="map" data-address="University of Utah,Salt Lake City, UT 84102, US"></div>
+    </section>
+    <!-- /GOOGLE MAP -->
+
+
+</div>
+<!-- /WRAPPER -->
+
+
+<footer class="footer module-sm module-overlay-dark-3" data-background="assets/images/module-5.jpg">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+                <div class="social-icons text-center m-t-10 m-b-10">
+                    <a href="https://www.linkedin.com/in/debjyotipaul385" target="_blank" alt="facebook"
+                       class="fa fa-linkedin facebook"></a>
+                    <a href="https://github.com/debjyoti385" target="_blank" alt="github"
+                       class="fa fa-github github"></a>
+                    <a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank"
+                       class="fa fa-flickr flickr"></a>
+                    <a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram"
+                       class="fa fa-instagram instagram"></a>
+                    <a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook"
+                       class="fa fa-facebook facebook"></a>
+                    <!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
+                    <!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
+                    <!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
+                    <!--<a href="#" target="_blank" class="fa fa-dribbble dribbble"></a>-->
+                    <!--<a href="#" target="_blank" class="fa fa-foursquare foursquare"></a>-->
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="copyright text-center">
+                    All Rights Reserved 2018 © <a href="#"><img src="assets/images/plogo_small.png"
+                                                                style="height: 1em; margin-bottom:4px;"></a>
+                </div>
+                <div class="copyright text-center">
+                    Videos and pictures are properties of owner and not for reproduction or reuse without owners
+                    consent.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+<!-- SCROLLTOP -->
+<div class="scroll-up">
+    <a href="#totop"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<!-- JAVASCRIPT FILES -->
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+<script src="assets/js/jquery-2.1.3.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+<script src="assets/js/jquery.superslides.min.js"></script>
+<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+<script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.fitvids.js"></script>
+<script src="assets/js/jqBootstrapValidation.js"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBrkfiCFwm1SzsrllxQqKDWZIJUuiwWNfU"></script>
+<script src="assets/js/gmap3.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/smoothscroll.js"></script>
+<script src="assets/js/submenu-fix.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<!-- Style Switcher -->
+<link href="assets/style-switcher/style-switcher.css" rel="stylesheet">
+<script src="assets/style-switcher/style-switcher.js"></script>
+<script src="assets/js/eModal.js"></script>
+<script>
+    function getModal(url, name) {
+        console.log(url);
+//            eModal.alert('You shall not pass!');
+        eModal.iframe(url, name);
+    };
+</script>
+<script src="assets/js/textscrambler.js"></script>
+<script>
+
+const email_phrases = [
+  'Revealing email id soon... ',
+  'deb@cs.utah.edu',
+  'Thanks for waiting.'
+]
+
+const el = document.querySelector('#email_div')
+const fx = new TextScramble(el)
+
+let counter = 0
+const next = () => {
+  fx.setText(email_phrases[counter]).then(() => {
+    setTimeout(next, 5000)
+  })
+  counter = (counter + 1) % email_phrases.length
+}
+next()
+</script>
+<script src="assets/js/debjyotipaulin.js"></script>
 </body>
+
 </html>
+<!-- Localized -->

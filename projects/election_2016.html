@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>Projects | Debjyoti Paul</title>
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="../assets/images/favicon.jpg">
+	<link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/apple-touch-icon-114x114.png">
+	
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Bootstrap core CSS -->
+	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Plugins -->
+	<link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../assets/css/stroke-gap-icons.css" rel="stylesheet">
+	<link href="../assets/css/simpletextrotator.css" rel="stylesheet">
+	<link href="../assets/css/magnific-popup.css" rel="stylesheet">
+	<link href="../assets/css/owl.carousel.css" rel="stylesheet">
+	<link href="../assets/css/superslides.css" rel="stylesheet">
+	<link href="../assets/css/vertical.min.css" rel="stylesheet">
+	<link href="../assets/css/animate.css" rel="stylesheet">
+	
+	<!-- Template core CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+	
+	<!-- Color CSS -->
+	<!--<link href="assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
+</head>
+<body>
+
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+	<!-- /PRELOADER -->
+
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- HERO -->
+		<section id="hero" class="module-hero module-parallax module-overlay-dark-1"  style="opacity: 0.8;" data-background="../assets/images/projects/election_2016.png">
+
+			<!-- HERO TEXT -->
+			<div class="hero-caption">
+				<div class="hero-text">
+					<h1 class="hero-title m-t-70" style="color:#000000;opacity: 1;">Spatio-temporal Sentiment Analysis: US Election 2016 </h1>
+				</div>
+			</div>
+			<!-- /HERO TEXT -->
+
+		</section>
+		<!-- /HERO -->
+
+		<!-- PORTFOLIO SINGLE -->
+		<section class="module module-w">
+
+
+			<div class="container" style="margin-top: 5px; width: 75%;">
+				<div class="row m-b-70">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<h2>Spatio-temporal Analysis: US Election 2016</h2><span
+							style=" display:table-cell;vertical-align:middle;"> <i class="fa fa-twitter fa-3"></i><i> What Twitter says!</i> </span>
+
+						<br>
+						This project explores how <i>Twitter</i> can be used to analyze the popularity of Political
+						Parties for the <b>Presidential Election 2016</b>. It is purely based on the data collected from
+						Twitter. Our aim is to present unbiased analysis of popularity based on the sentiment analysis
+						for each party (Republican and Democratic) at basic geospatial unit area which is `county' (<i>not</i>
+						Electoral Vote region) is our case. <br>
+						We also present time-range analysis of the data. End user can select date-time range of their
+						choice and analysis will only be presented based on the data from that range.
+
+						<br/>
+						<a href="http://estorm.org" target="_blank"><i class="fa fa-external-link fa-lg"></i></a>
+
+						<br>
+						<h3> Motivation </h3>
+						The motivation for this project is to build a Deep Learning Sentiment Analysis model which can
+						identify the sentiment behind every tweet. Politics is an area where lots of positive and
+						negative tweets are available. The Election season is a good time to gather such tweets. Our aim
+						is to associate correct sentiment with the tweets. Apart from that we used Machine Learning
+						classifier model to predict the affiliation of the tweet either with Republican or Democrats.
+						<br>
+						A Bursty Event Detection System is used to detect when surge of tweets happened. Our Bursty
+						Event detection correctly identified the tweet bursts and associated with the event happened at
+						that time.
+						<br>
+						<h3>Methods </h3>
+						We have millions of general tweets collected from Twitter APIs and our aim is to find politics
+						and election related tweets from this huge dataset.
+						<h4>Learn Keywords Associated to Politics </h4>
+						We crawled news articles categorized for Election from New York Times and Reuters. We used this
+						articles to learn the keywords/features associated to politics.
+						After we have handful of keywords we used Word2Vec and trained it on general tweet dataset to
+						find similar keywords we have obtained earlier.
+						<h4>Classifier for Political Tweets </h4>
+						A machine learning classifier is used to classify political and non-political tweets.
+						Furthermore same technique is used to classify the political affiliation (Democrats or
+						Republican).
+						<h4>Sentiment Analysis</h4>
+						A Deep learning LSTM network is used to evaluate the sentiment behind the tweet. The confidence
+						of sentiment score ranges between 0 and 1, where 0 and 1 being the most negative sentiment and
+						most positive sentiment respectively. 0.5 is assumed to be neutral.
+
+						<h4>Time and Geotagging</h4>
+						Each tweet has time and geo-location attached with it. We leverage geo-location information to
+						associate it with counties. <i>(Note: It is not related to Electoral Vote Region)</i>
+						<h4>Sentiment Score</h4>
+						The sentiment score associated with each county is average score of positive and negative
+						sentiment tweets for that region. <br>
+						Positive Score is the average score of all tweets with sentiment score greater than a <i>threshold</i>
+						(say 0.7).<br>
+						Similarly Negative score is the average score of all the tweets with sentiment score less than
+						<i> 1.0 - threshold</i> <br>
+						Final Sentiment Score is just the sum of the Positive and Negative sentiment score obtained
+						above.
+						<br>
+						<li><b>County Level Score:</b> The political party with maximum final sentiment score is
+							considered winner for that County.
+							<br>
+						</li>
+						<li><b>State Level Score:</b> The political party with maximum number of winning counties is
+							considered as winner.
+							<br>
+
+							<h2>Facts and Figures </h2> (updated Oct 16th, 2016)
+						</li>
+						<li> General Tweets: 286 million (Worldwide)
+						</li>
+						<li> Political Tweets 1.5+ millions (All Geotagged)
+						</li>
+						<li> Republican Tweets: 822,062
+						</li>
+						<li> Democrat Tweets: 702,042
+
+
+							<h3><i>Credits:</i></h3>
+							This project is an effort from InitialDLab, School of Computing,
+							University of Utah, in collaboration with Prof. Jian Li from
+							Tsinghua University
+							<br>
+							Team Members:
+							<ul>
+								<li> Prof. Feifei Li</li>
+								<li> Debjyoti Paul (Project Lead)</li>
+								<li> Yu Xin</li>
+								<li> Murali Krishna Teja</li>
+								<li> Richie Frost</li>
+								<li> Prof. Jian Li (Tsinghua University)</li>
+								<li> Dyllon Gagnier</li>
+								<li> Elijah Grubb</li>
+								<li> Jun Tang</li>
+								<ul>
+
+								</ul>
+							</ul>
+						</li>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+		<!-- /PORTFOLIO SINGLE -->
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<footer class="footer module-sm module-overlay-dark-3" data-background="assets/images/module-5.jpg">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-12">
+					<div class="social-icons text-center m-t-10 m-b-10">
+						<a href="https://www.linkedin.com/in/debjyotipaul385" target="_blank" alt="facebook" class="fa fa-linkedin facebook"></a>
+						<a href="https://github.com/debjyoti385" target="_blank" alt="github" class="fa fa-github github"></a>
+						<a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank" class="fa fa-flickr flickr"></a>
+						<a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram" class="fa fa-instagram instagram"></a>
+						<a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook" class="fa fa-facebook facebook"></a>
+						<!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
+						<!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
+						<!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
+						<!--<a href="#" target="_blank" class="fa fa-dribbble dribbble"></a>-->
+						<!--<a href="#" target="_blank" class="fa fa-foursquare foursquare"></a>-->
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<div class="copyright text-center" >
+						All Rights Reserved 2017 ©  <a href="#"><img src="../assets/images/plogo_small.png" style="height: 1em;"></a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+	
+	<!-- SCROLLTOP -->
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- JAVASCRIPT FILES -->
+	<script src="../assets/js/jquery-2.1.3.min.js"></script>
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="../assets/js/jquery.superslides.min.js"></script>
+	<script src="../assets/js/jquery.mb.YTPlayer.min.js"></script>
+	<script src="../assets/js/jquery.simple-text-rotator.min.js"></script>
+	<script src="../assets/js/imagesloaded.pkgd.js"></script>
+	<script src="../assets/js/isotope.pkgd.min.js"></script>
+	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="../assets/js/owl.carousel.min.js"></script>
+	<script src="../assets/js/jquery.fitvids.js"></script>
+	<script src="../assets/js/jqBootstrapValidation.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="../assets/js/gmap3.min.js"></script>
+	<script src="../assets/js/appear.js"></script>
+	<script src="../assets/js/wow.min.js"></script>
+	<script src="../assets/js/smoothscroll.js"></script>
+	<script src="../assets/js/submenu-fix.js"></script>
+	<script src="../assets/js/contact.js"></script>
+	<script src="../assets/js/custom.js"></script>
+	
+	<!-- Style Switcher -->
+	<!--<link href="../assets/style-switcher/style-switcher.css" rel="stylesheet">-->
+	<!--<script src="../assets/style-switcher/style-switcher.js"></script>-->
+
+</body>
+</html>
+<!-- Localized -->

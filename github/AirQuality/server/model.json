@@ -1,0 +1,198 @@
+{
+    "dimensions": [
+        {"name":"parameter",
+         "label":"Parameter Name",
+         "attributes": ["parameter_name"]
+        },
+        {"name":"parameter_code",
+        "attributes": ["parameter_code"]       
+        },
+        {
+          "name":"location",
+          "levels": [
+                  {
+                          "name":"state",
+                          "label":"State",
+                          "attributes":["state_code"]
+                  },
+                  {
+                          "name":"county",
+                          "label":"county",
+                          "attributes":["county_name"]
+                  },
+                  {
+                          "name":"city",
+                          "label":"city",
+                          "attributes":["city"]
+                  },
+                  {
+                          "name":"localarea",
+                          "label":"local area",
+                          "attributes":["local_site"]
+                  },
+                  {
+                          "name":"subarea",
+                          "label":"subarea",
+                          "attributes":["subarea"]
+                  }                  
+          ] 
+        },
+        {
+                  "name":"city",
+                  "label":"city",
+                  "attributes":["city"]
+        },
+        {
+                "name":"sample_duration",
+                "label":"sample duration",
+                "attributes":["sample_duration"]
+        },
+        {
+                "name":"event",
+                "label":"event",
+                "attributes":["event_type"]
+        },
+        {
+                "name":"survey",
+                "label":"survey",
+                "attributes":["datum"]
+        },
+        {
+                "name":"standard",
+                "label":"pollutant standard",
+                "attributes":["pollutant_standard"]
+        },
+        {"name":"year", "role": "time"}
+    ],
+    "cubes": [
+        {
+            "name": "airquality",
+            "dimensions": ["parameter","city","parameter_code","location","sample_duration","event","survey", "year"],
+            "measures": [
+                {"name":"measure_unit", "label":"Measure Unit"},
+                {"name":"observation_count", "label":"observation count"},
+                {"name":"required_day_count", "label":"required day count"},
+                {"name":"valid_day_count", "label":"valid day count"},
+                {"name":"observation_percent", "label":"Observation Percentage",
+                  "expression": "valid_day_count / required_day_count * 100"},
+                {"name":"arithmetic_mean", "label":"Arithmetic Mean"},
+                {"name":"arithmetic_stdev", "label":"Arithmetic Standard Deviation"},
+                {"name":"max1", "label":"1st Max Value"},
+                {"name":"max2", "label":"2nd Max Value"},
+                {"name":"max3", "label":"3rd Max Value"},
+                {"name":"max4", "label":"4th Max Value"},
+                {"name":"max1_datetime", "label":"1st Max Value Datetime"},
+                {"name":"max2_datetime", "label":"2nd Max Value Datetime"},
+                {"name":"max3_datetime", "label":"3rd Max Value Datetime"},
+                {"name":"max4_datetime", "label":"4th Max Value Datetime"},
+                {"name":"percentile_99", "label":"99th Percentile"},
+                {"name":"percentile_98", "label":"98th Percentile"},
+                {"name":"percentile_95", "label":"95th Percentile"},
+                {"name":"percentile_90", "label":"90th Percentile"},
+                {"name":"percentile_75", "label":"75th Percentile"},
+                {"name":"percentile_50", "label":"50th Percentile"},
+                {"name":"percentile_10", "label":"10th Percentile"},
+                {"name":"lat", "label":"Latitude"},
+                {"name":"lat_long", "label":"Latitude Longitude", "expression":"lat +','+ long"},
+                {"name":"long", "label":"Longitude"}
+            ],
+            "aggregates": [
+                    {
+                        "name": "average_mean",
+                        "function": "avg",
+                        "measure": "arithmetic_mean"
+                    },
+                    {
+                        "name": "max1_value",
+                        "function": "max",
+                        "measure": "max1"
+                    },
+                    {
+                        "name": "max2_value",
+                        "function": "max",
+                        "measure": "max2"
+                    },
+                    {
+                        "name": "max3_value",
+                        "function": "max",
+                        "measure": "max3"
+                    },
+                    {
+                        "name": "max4_value",
+                        "function": "max",
+                        "measure": "max4"
+                    },
+                    {
+                        "name": "record_count",
+                        "function": "count"
+                    },
+                    {
+                        "name": "avg_lat",
+                        "function": "avg",
+                        "measure": "lat"
+                    },
+                    {
+                        "name": "max1_value",
+                        "function": "max",
+                        "measure": "max1"
+                    },
+                    {
+                        "name": "max2_value",
+                        "function": "max",
+                        "measure": "max2"
+                    },
+                    {
+                        "name": "max3_value",
+                        "function": "max",
+                        "measure": "max3"
+                    },
+                    {
+                        "name": "max4_value",
+                        "function": "max",
+                        "measure": "max4"
+                    },
+                    {
+                        "name": "percentile10_value",
+                        "function": "avg",
+                        "measure": "percentile_10"
+                    },
+                    {
+                        "name": "percentile99_value",
+                        "function": "avg",
+                        "measure": "percentile_99"
+                    },
+                    {
+                        "name": "percentile98_value",
+                        "function": "avg",
+                        "measure": "percentile_98"
+                    },
+                    {
+                        "name": "percentile95_value",
+                        "function": "avg",
+                        "measure": "percentile_95"
+                    },
+                    {
+                        "name": "percentile50_value",
+                        "function": "avg",
+                        "measure": "percentile_50"
+                    },
+                    {
+                            "name":"avg_long",
+                            "function":"avg",
+                            "measure":"long"
+                    }
+                ],
+            "mappings": {
+                          "location.state_code": "state_code",
+                          "location.county_name": "county_name",
+                          "location.city": "city",
+                          "location.local_site": "local_site",
+                          "location.subarea": "subarea"
+                         },
+            "info": {
+                "min_date": "2003-01-01",
+                "max_date": "2013-12-31"
+            }
+        }
+    ]
+}

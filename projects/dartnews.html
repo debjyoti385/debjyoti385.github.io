@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>Projects | Debjyoti Paul</title>
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="../assets/images/favicon.jpg">
+	<link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/apple-touch-icon-114x114.png">
+	
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Bootstrap core CSS -->
+	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Plugins -->
+	<link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../assets/css/stroke-gap-icons.css" rel="stylesheet">
+	<link href="../assets/css/simpletextrotator.css" rel="stylesheet">
+	<link href="../assets/css/magnific-popup.css" rel="stylesheet">
+	<link href="../assets/css/owl.carousel.css" rel="stylesheet">
+	<link href="../assets/css/superslides.css" rel="stylesheet">
+	<link href="../assets/css/vertical.min.css" rel="stylesheet">
+	<link href="../assets/css/animate.css" rel="stylesheet">
+	
+	<!-- Template core CSS -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+	
+	<!-- Color CSS -->
+	<!--<link href="assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
+</head>
+<body>
+
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+	<!-- /PRELOADER -->
+
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- HERO -->
+		<section id="hero" class="module-hero module-parallax module-overlay-dark-1"  style="opacity: 0.8;" data-background="../assets/images/projects/dartnews.png">
+
+			<!-- HERO TEXT -->
+			<div class="hero-caption">
+				<div class="hero-text">
+					<h1 class="hero-title m-t-70" style="color:#000000;opacity: 1;">Dart News</h1>
+				</div>
+			</div>
+			<!-- /HERO TEXT -->
+
+		</section>
+		<!-- /HERO -->
+
+		<!-- PORTFOLIO SINGLE -->
+		<section class="module module-w">
+
+
+			<div class="container" style="margin-top: 5px; width: 75%;">
+				<div class="row m-b-70">
+
+					<div class="col-sm-8 col-sm-offset-2">
+						<h2>Dart News</h2>
+
+						It is a street news browsing application, with an interactive GIS interface. News is organized
+						by locality and topic. The user can choose one or more topics of interest (eg crime, politics
+						etc), and also narrow down to the locality of interest.
+
+						<br>
+						For this demo we are showing you how this application works for the whole of New Delhi - but
+						clearly this can be replicated for any city in the world.
+						<br/>
+						We started by collecting thousands of news articles by crawling online newspapers. Important to
+						note, we are not using RSS feeds - so this technique can be applied to ANY news article. Now we
+						needed an algorithm to tag each article to a topic and a locality. We hand tagged some news
+						articles to their topics, and used an active machine learning approach to build a topic tagging
+						algorithm. The active approach meant an exponential reduction in the amount of hand tagging
+						needed. Once we had topics for all the news articles in this way, we used THAT data to derive
+						street / locality tagging. This was done using a technique that we call CONTEXT DEPENDENT
+						GEOPARSING, where we attempt to find out which location is relevant to the NEWS, by giving more
+						emphasis to the location-revealing words in the article that are closer to the topic-revealing
+						keywords.
+						<br>
+						Once we had the topic and locality tags, we projected this data on to a GUI based on the
+						OPENSTREET GIS platform.
+						<br>
+						We've used only open source technologies in this hack. Our backend - the crawling and machine
+						learning part - is coded in PYTHON, and the GUI uses OPENSTREET GIS, along with a number of
+						openly available GITHUB libraries like leaflet, etc.
+						<br/>
+						Regarding accuracy of the tagging, we reserved a part of the hand tagged data for evaluation and
+						testing, and these are the results we saw. Across all the topics, we saw at least 87% accuracy
+						of topic prediction, and at least 80% accuracy of location prediction, which we think are really
+						encouraging numbers and could go commercial after some refinement.
+
+						<br/>
+						<a href="https://github.com/debjyoti385/dartnews" target="_blank"><i
+								class="fa fa-github fa-2x"></i></a>
+						| <a href="http://github.debjyotipaul.in/dartnews/" target="_blank"><i
+							class="fa fa-external-link fa-2x"></i></a>
+
+						<br>
+						Team Members:
+						<ul>
+							<li> Debjyoti Paul </li>
+							<li> Akhil Arora </li>
+							<li> Amit Bendale </li>
+
+							</ul>
+						</li>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+		<!-- /PORTFOLIO SINGLE -->
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<footer class="footer module-sm module-overlay-dark-3" data-background="assets/images/module-5.jpg">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-12">
+					<div class="social-icons text-center m-t-10 m-b-10">
+						<a href="https://www.linkedin.com/in/debjyotipaul385" target="_blank" alt="facebook" class="fa fa-linkedin facebook"></a>
+						<a href="https://github.com/debjyoti385" target="_blank" alt="github" class="fa fa-github github"></a>
+						<a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank" class="fa fa-flickr flickr"></a>
+						<a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram" class="fa fa-instagram instagram"></a>
+						<a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook" class="fa fa-facebook facebook"></a>
+						<!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
+						<!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
+						<!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
+						<!--<a href="#" target="_blank" class="fa fa-dribbble dribbble"></a>-->
+						<!--<a href="#" target="_blank" class="fa fa-foursquare foursquare"></a>-->
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<div class="copyright text-center" >
+						All Rights Reserved 2017 ©  <a href="#"><img src="../assets/images/plogo_small.png" style="height: 1em;"></a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+	
+	<!-- SCROLLTOP -->
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- JAVASCRIPT FILES -->
+	<script src="../assets/js/jquery-2.1.3.min.js"></script>
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="../assets/js/jquery.superslides.min.js"></script>
+	<script src="../assets/js/jquery.mb.YTPlayer.min.js"></script>
+	<script src="../assets/js/jquery.simple-text-rotator.min.js"></script>
+	<script src="../assets/js/imagesloaded.pkgd.js"></script>
+	<script src="../assets/js/isotope.pkgd.min.js"></script>
+	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="../assets/js/owl.carousel.min.js"></script>
+	<script src="../assets/js/jquery.fitvids.js"></script>
+	<script src="../assets/js/jqBootstrapValidation.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="../assets/js/gmap3.min.js"></script>
+	<script src="../assets/js/appear.js"></script>
+	<script src="../assets/js/wow.min.js"></script>
+	<script src="../assets/js/smoothscroll.js"></script>
+	<script src="../assets/js/submenu-fix.js"></script>
+	<script src="../assets/js/contact.js"></script>
+	<script src="../assets/js/custom.js"></script>
+	
+	<!-- Style Switcher -->
+	<!--<link href="../assets/style-switcher/style-switcher.css" rel="stylesheet">-->
+	<!--<script src="../assets/style-switcher/style-switcher.js"></script>-->
+
+</body>
+</html>
+<!-- Localized -->
