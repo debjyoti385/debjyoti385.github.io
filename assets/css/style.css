@@ -628,9 +628,9 @@ p.copyright {
 
 	.navbar-transparent {
 		background: transparent;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-		padding-top: 10px;
-		padding-bottom: 10px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		/* padding-top: 8px; */
+		/* padding-bottom: 8px; */
 	}
 
 	.navbar-transparent a,
