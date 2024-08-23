@@ -17,12 +17,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 110%;
+  height: 95%;
 }
 
 .sobre img {
-  width: 110%;
-  /* border-radius: 0.5rem; */
+  width: 95%;
+  border-radius: 0.5rem;
 }
 
 .overlay {
@@ -33,15 +33,30 @@ main {
   position: relative;
 }
 
+.ttext{
+    font-family: 'Tangerine', serif;
+    font-size: 20pt;
+    text-shadow: 1px 2px 3px gray;
+}
+
+
+.dtext{
+    padding-top: 20pt;
+    font-family: 'Tangerine', serif;
+    font-size: 40pt;
+    text-shadow: 2px 1px 4px #01ACCE;
+
+}
+
 .link {
-  font-family: Calibri, Arial, sans-serif;
+  /* font-family: Calibri, Arial, sans-serif; */
   font-style: italic;
   text-align:center;
   font-weight: bold;
-  padding: 1%;
+  /* padding: 1%; */
   text-decoration: none;
   color: white;
-  text-shadow: 1px 2px 3px black;
+
     z-index: 2;
 }
 
