@@ -308,11 +308,13 @@
                                 • <a href="https://vldb.org/2021/?call-for-industrial-track" target="_blank"> International Conference on Very Large Data Bases (VLDB) 2021 </a><br/>
                                 • <a href="https://icde2021.gr/industry-and-applications-track-committee/" target="_blank"> International Conference on Data Engineering (ICDE) 2021</a>
                                 <span style="margin-top:10px;"><b>Reviewer</b></span><br/>
+                                • IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) <br/>
+                                • ISCA Interspeech <br/>
+                                • IEEE Automatic Speech Recognition and Understanding (ASRU) </br>
                                 • IEEE Transactions on Knowledge and Data Engineering (TKDE)<br/>
                                 • International Conference on Very Large Data Bases (VLDB)<br/>
                                 • International Conference on Data Engineering (ICDE)<br/>
-				                • International Conference on Acoustics, Speech and Signal Processing (ICASSP) <br/>
-                                • ISCA Interspeech <br/>
+				• International Conference on Acoustics, Speech and Signal Processing (ICASSP) <br/>
                                 • IEEE Spoken Language Technology (IEEE SLT)<br/>                                
                                 <span style="margin-top:10px;"><b>Teaching</b></span><br/>
                                   • Advance Database Systems (Fall 2017, 3 Lectures)<br/>
@@ -590,46 +592,15 @@
         <div class="container">
             <div class="row">
 
-		<!-- PUBLICATION COLUMN -->
-                <div class="col-sm-12">
-                    <div class="m-b-70">
-                        <h5><b>A Domain Adaptation Framework for Speech Recognition Systems with Only Synthetic data</b></h5>
-                        <h6 class="shiftup-20">Minh Tran, Yutong Pang, <b>Debjyoti Paul</b>, Laxmi Pandey, Kevin Jiang, Jinxi Guo, Ke Li, Shun Zhang, Xuedong Zhang, Xin Lei</h6>
-                        <h6 class="shiftup-20"> In review.
-                        </h6>
-                        <p class="shiftup-20"> [<a data-toggle="collapse" href="#01_DAS_SYNTH_2025">Abstract</a>] | 
-                            [<a href="#" target="_blank">PDF</a>] |                              
-                            [<a data-toggle="collapse" href="#01_DAS_SYNTH_2025BIB">Cite</a>]
-                        </p>
-                        <div id="01_DAS_SYNTH_2025" class="collapse" >
-                        <!--<hr class="divider divider-gross m-b-30">-->
-                        <blockquote>
-                            <p style="font-size: small">
-                                <b>Abstract</b></br>
-                                We introduce DAS (Domain Adaptation with Synthetic data), a novel domain adaptation framework for pre-trained ASR model, designed to efficiently adapt to various language-defined domains without requiring any real data. In particular, DAS first prompts large language models (LLMs) to generate domain-specific texts before converting these texts to speech via text-to-speech technology. The synthetic data is used to fine-tune Whisper with Low-Rank Adapters (LoRAs) for targeted domains such as music, weather, and sports. We introduce a novel one-pass decoding strategy that merges predictions from multiple LoRA adapters efficiently during the auto-regressive text generation process. Experimental results show significant improvements, reducing the Word Error Rate (WER) by 10% to 17% across all target domains compared to the original model, with minimal performance regression in out-of-domain settings -1% on Librispeech test sets. We also demonstrate that DAS operates efficiently during inference, introducing an additional 9% increase in Real Time Factor (RTF) compared to the original model when inferring with three LoRA adapters.
-                                </p>
-                        </blockquote>
-                        </div>
-                        <div id="01_DAS_SYNTH_2025BIB" class="collapse" >
-                        <blockquote>
-                            <p style="font-size: small; font-family:Courier;">
-                                @misc{minh2024dassynth,</br>
-                                    title={A Domain Adaptation Framework for Speech Recognition Systems with Only Synthetic data}, </br>
-                                    author={ Minh Tran and Yutong Pang and ebjyoti Paul and Laxmi Pandey and Kevin Jiang et al.},</br>
-                                    year={2025}</br>                                    
-                            }</p>
-                        </blockquote>
-                        </div>
-                    </div>
-                </div>
+		<!-- PUBLICATION COLUMN -->                
                 <div class="col-sm-12">
                     <div class="m-b-70">
                         <h5><b>R2S: Representation Learning for Speech Recognition with Guidance from Synthetic Data</b></h5>
-                        <h6 class="shiftup-20">Minh Tran, Yutong Pang, <b>Debjyoti Paul</b>, Laxmi Pandey, Kevin Jiang, Jinxi Guo, Ke Li, Shun Zhang, Xuedong Zhang, Xin Lei</h6>
+                        <h6 class="shiftup-20">Minh Tran, <b>Debjyoti Paul</b>,  Yutong Pang, Laxmi Pandey, Kevin Jiang, Jinxi Guo, Ke Li, Shun Zhang, Xuedong Zhang, Xin Lei</h6>
                         <h6 class="shiftup-20"> In review.
                         </h6>
                         <p class="shiftup-20"> [<a data-toggle="collapse" href="#01_R2S_SYNTH_2025">Abstract</a>] | 
-                            [<a href="#" target="_blank">PDF</a>] |                              
+                            [<a href="assets/pub/r2s_interspeech_2025.pdf" target="_blank">PDF</a>] |                              
                             [<a data-toggle="collapse" href="#01_R2S_SYNTH_2025BIB">Cite</a>]
                         </p>
                         <div id="01_R2S_SYNTH_2025" class="collapse" >
@@ -646,8 +617,44 @@
                             <p style="font-size: small; font-family:Courier;">
                                 @misc{minh2024r2ssynth,</br>
                                     title={R2S: Representation Learning for Speech Recognition with Guidance from Synthetic Data}, </br>
-                                    author={ Minh Tran and Yutong Pang and ebjyoti Paul and Laxmi Pandey and Kevin Jiang et al.},</br>
+                                    author={Tran, Minh and Paul, Debjyoti and Pang, Yutong and Pandey, Laxmi and Guo, Jinxi and Li, Ke and Zhang, Shun and Zhang, Xuedong and Lei, Xin},</br>
                                     year={2025}</br>                                    
+				    booktitle={Interspeech 2025}</br> 
+                            }</p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
+		<div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>A Domain Adaptation Framework for Speech Recognition Systems with Only Synthetic data</b></h5>
+                        <h6 class="shiftup-20">Minh Tran, Yutong Pang, <b>Debjyoti Paul</b>, Laxmi Pandey, Kevin Jiang, Jinxi Guo, Ke Li, Shun Zhang, Xuedong Zhang, Xin Lei</h6>
+                        <h6 class="shiftup-20"> In review.
+                        </h6>
+                        <p class="shiftup-20"> [<a data-toggle="collapse" href="#01_DAS_SYNTH_2025">Abstract</a>] | 
+                            [<a href="assets/pub/das_icassp_2025.pdf" target="_blank">PDF</a>] |                              
+			    [<a href="assets/pub/das_icassp_2025_slides.pdf" target="_blank">Slides</a>] |                              
+                            [<a data-toggle="collapse" href="#01_DAS_SYNTH_2025BIB">Cite</a>]
+                        </p>
+                        <div id="01_DAS_SYNTH_2025" class="collapse" >
+                        <!--<hr class="divider divider-gross m-b-30">-->
+                        <blockquote>
+                            <p style="font-size: small">
+                                <b>Abstract</b></br>
+                                We introduce DAS (Domain Adaptation with Synthetic data), a novel domain adaptation framework for pre-trained ASR model, designed to efficiently adapt to various language-defined domains without requiring any real data. In particular, DAS first prompts large language models (LLMs) to generate domain-specific texts before converting these texts to speech via text-to-speech technology. The synthetic data is used to fine-tune Whisper with Low-Rank Adapters (LoRAs) for targeted domains such as music, weather, and sports. We introduce a novel one-pass decoding strategy that merges predictions from multiple LoRA adapters efficiently during the auto-regressive text generation process. Experimental results show significant improvements, reducing the Word Error Rate (WER) by 10% to 17% across all target domains compared to the original model, with minimal performance regression in out-of-domain settings -1% on Librispeech test sets. We also demonstrate that DAS operates efficiently during inference, introducing an additional 9% increase in Real Time Factor (RTF) compared to the original model when inferring with three LoRA adapters.
+                                </p>
+                        </blockquote>
+                        </div>
+                        <div id="01_DAS_SYNTH_2025BIB" class="collapse" >
+                        <blockquote>
+                            <p style="font-size: small; font-family:Courier;">
+                                @misc{minh2024dassynth,</br>
+                                    title={A Domain Adaptation Framework for Speech Recognition Systems with Only Synthetic data}, </br>
+                                    author={Tran, Minh and Pang, Yutong and Paul, Debjyoti and Pandey, Laxmi and Jiang, Kevin and Guo, Jinxi and Li, Ke and Zhang, Shun and Zhang, Xuedong and Lei, Xin},</br>
+                                    year={2025},</br>                                    
+				    pages={1-5},</br>
+				    booktitle={ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},</br> 
+				    doi={10.1109/ICASSP49660.2025.10887883}</br>
                             }</p>
                         </blockquote>
                         </div>
