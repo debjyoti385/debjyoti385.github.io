@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Debjyoti Paul - Staff Research Scientist at Meta working on mid/post-training of large language models (LLMs), audio LLMs, and automatic speech recognition. Ph.D. in Computer Science, University of Utah.">
+    <meta name="author" content="Debjyoti Paul">
 
-    <title>Debjyoti Paul</title>
+    <title>Debjyoti Paul — Staff Research Scientist at Meta | Speech &amp; LLMs</title>
+
+    <!-- Canonical & crawl -->
+    <link rel="canonical" href="https://www.debjyotipaul.in/">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111111">
+    <meta name="color-scheme" content="light">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Debjyoti Paul">
+    <meta property="og:title" content="Debjyoti Paul — Staff Research Scientist at Meta">
+    <meta property="og:description" content="Staff Research Scientist at Meta working on mid/post-training of large language models (LLMs), audio LLMs, and automatic speech recognition. Ph.D., University of Utah.">
+    <meta property="og:url" content="https://www.debjyotipaul.in/">
+    <meta property="og:image" content="https://www.debjyotipaul.in/assets/images/01.jpg">
+    <meta property="og:image:alt" content="Debjyoti Paul">
+    <meta property="og:locale" content="en_US">
+    <meta property="profile:first_name" content="Debjyoti">
+    <meta property="profile:last_name" content="Paul">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Debjyoti Paul — Staff Research Scientist at Meta">
+    <meta name="twitter:description" content="Speech understanding & LLM mid/post-training at Meta. Ph.D., University of Utah.">
+    <meta name="twitter:image" content="https://www.debjyotipaul.in/assets/images/01.jpg">
+
+    <!-- Performance: warm up the font connections early -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+    </script>
+
+    <!-- Structured data: schema.org Person (rich results / knowledge graph) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Debjyoti Paul",
+      "alternateName": "দেবজ্যোতি পাল",
+      "url": "https://www.debjyotipaul.in/",
+      "image": "https://www.debjyotipaul.in/assets/images/01.jpg",
+      "jobTitle": "Staff Research Scientist",
+      "worksFor": { "@type": "Organization", "name": "Meta" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "University of Utah" },
+        { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Kanpur" },
+        { "@type": "CollegeOrUniversity", "name": "Institute of Engineering and Management" }
+      ],
+      "knowsAbout": ["Large Language Models", "LLM post-training", "Automatic Speech Recognition", "Audio LLMs", "Representation Learning", "Spatio-temporal Data Analysis"],
+      "sameAs": [
+        "https://www.linkedin.com/in/debjyotipaul385",
+        "https://github.com/debjyoti385",
+        "https://scholar.google.com/citations?user=xSy7SxUAAAAJ",
+        "https://www.instagram.com/wandererdeb/",
+        "https://www.facebook.com/wandererdeb",
+        "https://www.flickr.com/photos/144241296@N05/albums"
+      ]
+    }
+    </script>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="assets/images/favicon.jpg">
@@ -15,7 +80,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700' rel='stylesheet'
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700&display=swap' rel='stylesheet'
           type='text/css'>
 
     <!-- Bootstrap core CSS -->
@@ -35,6 +100,9 @@
 
     <!-- Template core CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive / mobile fixes (loaded last so it overrides) -->
+    <link href="assets/css/responsive-fixes.css" rel="stylesheet">
 
     <!-- Color CSS -->
     <!--<link href="assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
@@ -64,7 +132,7 @@
             <!-- YOU LOGO HERE -->
             <a class="navbar-brand" href="#hero">
                 <!-- IMAGE OR SIMPLE TEXT -->
-                <img class="light-logo" src="assets/images/plogo.png" width="120" alt="" style="margin-left: -32px; margin-top: 5px;">
+                <img loading="lazy" decoding="async" class="light-logo" src="assets/images/plogo.png" width="120" alt="" style="margin-left: -32px; margin-top: 5px;">
             </a>
         </div>
 
@@ -102,8 +170,8 @@
                         <!-- I'm <span
                         class="rotate"> a Researcher  | a Photographer | a Coder </span> -->
                     <br><br/></h1>
-                <div style="margin-top: 300px;">
-                    <!-- <img class="img-circle" src="assets/images/scroll-down.png" style="width:150px;"> </img>
+                <div class="hero-scroll">
+                    <!-- <img loading="lazy" decoding="async" class="img-circle" src="assets/images/scroll-down.png" style="width:150px;"> </img>
                     -->
                     scroll</br>
                     <i class="fa fa-arrow-down" style="font-weight: 900; font-size:24px;"></i>
@@ -128,7 +196,7 @@
 				showControls: true,
 				realfullscreen: true,
 				remember_last_time: true,
-				useOnMobile: true,
+				useOnMobile: false,
 				showYTLogo: false,
 				vol: 0,
 				mute: true
@@ -149,7 +217,7 @@
                     <div class="m-t-sm-0" style="margin:-10px;">
                         <h3>Debjyoti Paul | দেবজ্যোতি পাল </h3>
                         <p class="shiftup-20">
-                        Debjyoti Paul is a Senior Research Scientist at Meta. He obtained his Ph.D. degree in Computer Science from the <a href="https://www.cs.utah.edu/" target="_blank"> University of Utah</a>, advised by Professor <a href="https://www.cs.utah.edu/~lifeifei/" target="_blank"> Feifei Li</a>. He received his Masters and Bachelors degree in Computer Science from <a href="https://www.cse.iitk.ac.in" target="_blank"> Indian Intitute of Technology Kanpur </a> and <a href="https://iem.edu.in/" target="_blank"> Intitute of Engineering and Management</a>, India respectively. His current research interests involve audioLLMs, automatic speech recognition/translation (ASR/AST), language modeling (LM), entity representation learning, spatio-temporal data analysis, etc.
+                        Debjyoti Paul is a Staff Research Scientist at Meta, where his current work focuses on mid- and post-training of large language models (LLMs). His research interests span LLM post-training, audio LLMs, automatic speech recognition/translation (ASR/AST), language modeling (LM), representation learning, and spatio-temporal data analysis. He obtained his Ph.D. degree in Computer Science from the <a href="https://www.cs.utah.edu/" target="_blank"> University of Utah</a>, advised by Professor <a href="https://www.cs.utah.edu/~lifeifei/" target="_blank"> Feifei Li</a>. He received his Masters and Bachelors degrees in Computer Science from the <a href="https://www.cse.iitk.ac.in" target="_blank"> Indian Institute of Technology Kanpur </a> and <a href="https://iem.edu.in/" target="_blank"> Institute of Engineering and Management</a>, India respectively.
                         </p>
                         <!-- <p class="shiftup-20">A PhD graduate from <a
                                 href="https://www.cs.utah.edu/" target="_blank"> School of Computing,  University of Utah, USA, </a>
@@ -169,42 +237,42 @@
                 <!-- LOGOS -->
                 <div class="col-md-3" style="margin-top:80px;">
                     <div class="hidden-sm hidden-xs">
-                        <img src="assets/images/utah_logo.png"
+                        <img loading="lazy" decoding="async" src="assets/images/utah_logo.png"
                              style="height:100px; padding-right: 50px; margin-bottom: 10px; vertical-align: middle"
                              alt="">
                     </div>
                     <div class="hidden-sm hidden-xs">
-                        <img src="assets/images/iitk_logo_black.png" style="height:100px;padding-left: 20px;" alt="">
+                        <img loading="lazy" decoding="async" src="assets/images/iitk_logo_black.png" style="height:100px;padding-left: 20px;" alt="">
                     </div>
                 </div>
 
                 <!--  <div class="hidden-sm hidden-xs shiftup-25">-->
-                <!--      <img src="assets/images/flogo.png" style="height:70px;padding-left: 20px; margin-top: 40px;" alt="">-->
-                <!--      <img src="assets/images/amazon1.png" style="height:75px;padding-left: 20px;margin-top: 45px; " alt="">-->
+                <!--      <img loading="lazy" decoding="async" src="assets/images/flogo.png" style="height:70px;padding-left: 20px; margin-top: 40px;" alt="">-->
+                <!--      <img loading="lazy" decoding="async" src="assets/images/amazon1.png" style="height:75px;padding-left: 20px;margin-top: 45px; " alt="">-->
                 <!--  </div>-->
                 <!--  <div class="hidden-sm hidden-xs shiftup-25">-->
-                <!--      <img src="assets/images/flipkart_logo.png" style="height:75px;padding-left: 20px;margin-top: 45px; " alt="">-->
+                <!--      <img loading="lazy" decoding="async" src="assets/images/flipkart_logo.png" style="height:75px;padding-left: 20px;margin-top: 45px; " alt="">-->
                 <!--  </div>-->
                 <!-- /LOGOS -->
 
                 <!-- PHOTO -->
                 <div class="col-md-3">
-                    <div class="hidden-sm hidden-xs">
-                        <img class="img-circle" src="assets/images/01.jpg" style="width:250px;" alt="">
+                    <div class="profile-photo">
+                        <img loading="lazy" decoding="async" class="img-circle" src="assets/images/01.jpg" style="width:250px;" alt="">
                     </div>
 
 
                     <div class="social-icons text-center m-t-40 m-b-10">
                         <a href="https://www.linkedin.com/in/debjyotipaul385" target="_blank" alt="facebook"
-                           class="fa fa-linkedin facebook"></a>
+                           aria-label="LinkedIn" class="fa fa-linkedin facebook"></a>
                         <a href="https://github.com/debjyoti385" target="_blank" alt="github"
-                           class="fa fa-github github"></a>
+                           aria-label="GitHub" class="fa fa-github github"></a>
                         <a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank"
-                           class="fa fa-flickr flickr"></a>
+                           aria-label="Flickr" class="fa fa-flickr flickr"></a>
                         <a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram"
-                           class="fa fa-instagram instagram"></a>
+                           aria-label="Instagram" class="fa fa-instagram instagram"></a>
                         <a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook"
-                           class="fa fa-facebook facebook"></a>
+                           aria-label="Facebook" class="fa fa-facebook facebook"></a>
                         <!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
                         <!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
                         <!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
@@ -213,12 +281,12 @@
                     </div>
                     <div class="social-icons text-center m-b-10">
                         <a href="https://mytravelessence.com" target="_blank" alt="facebook"
-                           class="fa fa-photo facebook"></a>
+                           aria-label="Travel blog" class="fa fa-photo facebook"></a>
                         <a href="http://geekological.com" target="_blank" alt="github"
-                           class="fa fa-wordpress github"></a>
-                        <!--<a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank" class="fa fa-flickr flickr"></a>-->
-                        <!--<a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram" class="fa fa-instagram instagram"></a>-->
-                        <!--<a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook" class="fa fa-facebook facebook"></a>-->
+                           aria-label="Blog" class="fa fa-wordpress github"></a>
+                        <!--<a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank" aria-label="Flickr" class="fa fa-flickr flickr"></a>-->
+                        <!--<a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram" aria-label="Instagram" class="fa fa-instagram instagram"></a>-->
+                        <!--<a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook" aria-label="Facebook" class="fa fa-facebook facebook"></a>-->
                         <!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
                         <!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
                         <!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
@@ -244,7 +312,7 @@
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text-center shiftup-20">
                     <div class="module-title"> Resume</div>
-                    <div class="shiftup-30 m-b-20"><a href="https://rawgit.com/debjyoti385/resume/master/debjyoti_paul_resume.pdf" target="_blank"><i
+                    <div class="shiftup-30 m-b-20"><a href="assets/files/debjyoti_paul_resume.pdf" target="_blank"><i
                             class="fa fa-file-pdf-o fa-4x"></i><br/>click here</a>
                     </div>
                     <!--<h3 class="module-subtitle m-b-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of decided to leave.</h3>-->
@@ -379,12 +447,19 @@
                       </div>
 
                       <ul class="timeline">
-                        <li class="event" data-date="2022-Present">
+                        <li class="event" data-date="2025-Present">
+                        <div class="profile-content" style="">
+                            <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Meta </h6>
+                            <p>Staff Research Scientist</p>
+                            <p class="shiftup-25">AI Speech &#8594; LLM post-training (GenAI, MSL)</p>
+                            <p class="shiftup-25" style="margin-bottom: -25px;">Location: Menlo Park, USA</p>
+                        </div>
+
+                        <li class="event" data-date="2022-2025">
                         <div class="profile-content" style="">
                             <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Meta </h6>
                             <p>Senior Research Scientist</p>
-                              <!-- <p class="shiftup-25">Pages search improvement with AI</p> -->
-                            <p class="shiftup-25">Reality Labs &#8594; Llama Speech &#8594; GenAI</p>
+                            <p class="shiftup-25">AI Speech (Llama Speech, GenAI)</p>
                             <p class="shiftup-25" style="margin-bottom: -25px;">Location: Menlo Park, USA</p>
                         </div>
 
@@ -392,7 +467,7 @@
                         <div class="profile-content">
                             <h6><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Meta </h6>
                             <p>Research Scientist</p>
-                            <p class="shiftup-25">AI Speech &#8594; Reality Labs</p>
+                            <p class="shiftup-25">AI Speech (Reality Labs)</p>
                             <p class="shiftup-25" style="margin-bottom: -25px;">Location: Menlo Park, USA</p>
 
                         </div>
@@ -589,6 +664,27 @@
             <div class="row">
 
 		<!-- PUBLICATION COLUMN -->                
+                <div class="col-sm-12">
+                    <div class="m-b-70">
+                        <h5><b>VowelPrompt: Hearing Speech Emotions from Text via Vowel-level Prosodic Augmentation</b></h5>
+                        <h6 class="shiftup-20">Yancheng Wang, Osama Hanna, Ruiming Xie, Xianfeng Rui, <b>Debjyoti Paul</b>, Maohao Shen, Xuedong Zhang, et al.</h6>
+                        <h6 class="shiftup-20"> International Conference on Learning Representations (ICLR), April 23-27, 2026, Rio de Janeiro, Brazil.
+                        </h6>
+                        <p class="shiftup-20"> [<a data-toggle="collapse" href="#01_VOWELPROMPT_2026BIB">Cite</a>]
+                        </p>
+                        <div id="01_VOWELPROMPT_2026BIB" class="collapse" >
+                        <blockquote>
+                            <p style="font-size: small; font-family:Courier;">
+                                @inproceedings{wang2026vowelprompt,</br>
+                                    title={{VowelPrompt: Hearing Speech Emotions from Text via Vowel-level Prosodic Augmentation}},</br>
+                                    author={Wang, Yancheng and Hanna, Osama and Xie, Ruiming and Rui, Xianfeng and Paul, Debjyoti and Shen, Maohao and Zhang, Xuedong and others},</br>
+                                    booktitle={International Conference on Learning Representations (ICLR)},</br>
+                                    year={2026},</br>
+                            }</p>
+                        </blockquote>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-12">
                     <div class="m-b-70">
                         <h5><b>R2S: Representation Learning for Speech Recognition with Guidance from Synthetic Data</b></h5>
@@ -1399,6 +1495,18 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
             <div id="news_toggle" class="collapsed col-sm-10 col-sm-offset-1"  data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" style="align:left; font-weight: bold; padding-bottom: 15px;">[+] click for more</div>
             <div class="col-sm-10 col-sm-offset-1">
                 <blockquote>
+                    [Apr 2026] Our paper <i>VowelPrompt: Hearing Speech Emotions from Text via Vowel-level Prosodic Augmentation</i> accepted at <a href="https://iclr.cc/" target="_blank">ICLR 2026</a>, Rio de Janeiro, Brazil.
+                </blockquote>
+                <blockquote>
+                    [2025] Promoted to Staff Research Scientist at Meta.
+                </blockquote>
+                <blockquote>
+                    [Aug 2025] Presented our research paper <i>R2S: Representation Learning for Speech Recognition with Guidance from Synthetic Data</i> at <a href="https://interspeech2025.org/" target="_blank">Interspeech 2025</a>, Rotterdam, The Netherlands.
+                </blockquote>
+                <blockquote>
+                    [Apr 2025] Our paper <i>A Domain Adaptation Framework for Speech Recognition Systems with Only Synthetic Data</i> presented at <a href="https://2025.ieeeicassp.org/" target="_blank">ICASSP 2025</a>, Hyderabad, India.
+                </blockquote>
+                <blockquote>
                     [Dec 2023] Our paper <i>Recovering from Privacy-Preserving Masking with Large Language Models</i> accepted at ICASSP 2024.
                 </blockquote>
                 <blockquote>
@@ -1435,7 +1543,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                     [Mar 2020] Joined Facebook as a Research Scientist in 2020.
                 </blockquote>
                 <blockquote>
-                    [Feb 2020] <img src="assets/images/utah_logo.png" style="height: 25px;"> Completed PhD in Computer Science and Engineering on February 2020.
+                    [Feb 2020] <img loading="lazy" decoding="async" src="assets/images/utah_logo.png" style="height: 25px;"> Completed PhD in Computer Science and Engineering on February 2020.
                 </blockquote>
                 <blockquote class="collapse multi-collapse">
                     [Apr 2019] <i>AI Pro: Data Processing Framework for AI Models</i> paper accepted for ICDE 2019, library published <a href="https://github.com/debjyoti385/AIPro" target="_blank">here</a>.
@@ -1462,36 +1570,36 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                     <a href="https://unews.utah.edu/make-america-tweet-again/" target="_blank"><img
                             src="assets/images/media/unews.png" style="height:20px;"></img></a>
                     | <a href="http://www.sltrib.com/home/4536497-155/university-of-utah-software-gauges-popular"
-                         target="_blank"><img src="assets/images/media/logo_sltrib_black.png"
+                         target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/logo_sltrib_black.png"
                                               style="height:20px;"></img></a>
                     | <a
                         href="http://economictimes.indiatimes.com/news/international/world-news/tweet-sentiments-predict-hillary-clinton-the-winner/articleshow/55242173.cms"
-                        target="_blank"><img src="assets/images/media/TheEconomicTimes.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/TheEconomicTimes.png" style="height:20px;"></img></a>
                     | <a href="http://scienmag.com/make-america-tweet-again/" target="_blank"><img
                         src="assets/images/media/science_mag.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.business-standard.com/article/news-ians/tweet-sentiments-predict-hillary-clinton-the-winner-116110400330_1.html"
-                        target="_blank"><img src="assets/images/media/business_standard.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/business_standard.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.bgr.in/news/twitters-sentiments-analysis-predicts-hillary-clinton-the-winner-of-us-presidential-election-2016/"
-                        target="_blank"><img src="assets/images/media/bgr_logo_black_500.png"
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/bgr_logo_black_500.png"
                                              style="height:20px;"></img></a>
                     | <a href="http://phys.org/news/2016-11-america-tweet.html" target="_blank"><img
                         src="assets/images/media/physorg-logo.jpg" style="height:20px;"></img></a>
                     | <a
                         href="http://indiatoday.intoday.in/story/tweet-sentiment-analysis-predicts-hillary-clinton-win/1/802350.html"
-                        target="_blank"><img src="assets/images/media/logo_it.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/logo_it.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.rediff.com/news/report/early-us-voters-shatter-polling-record-tweet-analysis-predicts-hillary-win/20161104.htm"
-                        target="_blank"><img src="assets/images/media/rediff.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/rediff.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.news18.com/news/tech/tweet-sentiments-predict-hillary-clinton-will-be-the-next-potus-1308130.html"
-                        target="_blank"><img src="assets/images/media/news18.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/news18.png" style="height:20px;"></img></a>
                     | <a href="http://www.eurasiareview.com/02112016-make-america-tweet-again/" target="_blank"><img
                         src="assets/images/media/erlogo.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.newindianexpress.com/world/2016/nov/04/tweet-sentiments-predict-hillary-clinton-the-winner-1534919.html"
-                        target="_blank"><img src="assets/images/media/newindianexpress.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/newindianexpress.png" style="height:20px;"></img></a>
                 </blockquote>
                 <blockquote class="collapse multi-collapse">
                     [2016] Open-sourced a modified style for latex-based acedemic poster making library <a
@@ -1512,65 +1620,65 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                     <a href="http://time.com/4533176/coffee-pizza-tweet-twitter-social-media/" target="_blank"><img
                             src="assets/images/media/time.png" style="height:20px;"></img></a>
                     | <a href="http://www.nbcnews.com/health/health-news/coffee-beer-win-twitter-food-fight-n667626"
-                         target="_blank"><img src="assets/images/media/nbcnews.jpeg" style="height:20px;"></img></a>
+                         target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/nbcnews.jpeg" style="height:20px;"></img></a>
                     | <a href="http://www.reuters.com/article/us-health-twitter-surveillance-idUSKCN12I2DT"
-                         target="_blank"><img src="assets/images/media/reuters.png" style="height:20px;"></img></a>
+                         target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/reuters.png" style="height:20px;"></img></a>
                     | <a href="http://health.usnews.com/health-care/articles/2016-10-18/health-highlights-oct-18-2016"
-                         target="_blank"><img src="assets/images/media/usnews.png" style="height:20px;"></img></a>
+                         target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/usnews.png" style="height:20px;"></img></a>
                     | <a href="https://www.yahoo.com/style/most-frequently-tweeted-foods-tell-234417933.html"
-                         target="_blank"><img src="assets/images/media/yahoonews.png" style="height:20px;"></img></a>
+                         target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/yahoonews.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.bgr.in/news/top-ten-tweeted-foods-in-us-has-only-one-healthy-food-in-the-list-study/"
-                        target="_blank"><img src="assets/images/media/bgr_logo_black_500.png"
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/bgr_logo_black_500.png"
                                              style="height:20px;"></img></a>
                     | <a
                         href="http://economictimes.indiatimes.com/magazines/panache/top-10-tweeted-food-list-chicken-top-of-the-table/articleshow/54898290.cms"
-                        target="_blank"><img src="assets/images/media/TheEconomicTimes.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/TheEconomicTimes.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.newindianexpress.com/lifestyle/food/2016/oct/17/top-10-food-tweets-contain-just-one-healthy-item-us-study-1528846.html"
-                        target="_blank"><img src="assets/images/media/newindianexpress.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/newindianexpress.png" style="height:20px;"></img></a>
                     | <a
                         href="http://zeenews.india.com/entertainment/and-more/top-10-tweeted-food-list-has-just-one-healthy-item_1940867.html"
-                        target="_blank"><img src="assets/images/media/zeenews.jpeg" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/zeenews.jpeg" style="height:20px;"></img></a>
                     | <a
                         href="http://www.ndtv.com/health/top-10-food-tweets-contain-just-one-healthy-item-us-study-1475286"
-                        target="_blank"><img src="assets/images/media/ndtv.png" style="height:20px;"></img></a>
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/ndtv.png" style="height:20px;"></img></a>
                     | <a
                         href="http://www.hindustantimes.com/health-and-fitness/top-10-tweeted-food-items-chicken-is-the-healthiest-thing-on-the-list/story-7PrMM9a92wLSyhyrGdis1L.html"
-                        target="_blank"><img src="assets/images/media/hindustantimes.png"
+                        target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/hindustantimes.png"
                                              style="height:20px;"></img></a>
                 </blockquote>
                 <blockquote class="collapse multi-collapse">
                     [2014] <i>Multi-objective Evolution based Dynamic Job Scheduler in Grid</i> paper accepted at CISIS 2014.
                 </blockquote>
-                <blockquote>[2013] <a href="http://iitk.ac.in" target="_blank"><img src="assets/images/iitk_logo_black.png" style="height: 25px;"></a>
+                <blockquote>[2013] <a href="http://iitk.ac.in" target="_blank"><img loading="lazy" decoding="async" src="assets/images/iitk_logo_black.png" style="height: 25px;"></a>
                      Ranked 3rd out of 39 M.Tech students of CSE department in <a href="http://cse.iitk.ac.in" target="_blank"> Indian of Institute
                     Technology, Kanpur</a> M.Tech (2011-2013)
 
                 </blockquote>
-                <blockquote>[2012] <img src="assets/images/iitk_logo_black.png" style="height: 25px;">
+                <blockquote>[2012] <img loading="lazy" decoding="async" src="assets/images/iitk_logo_black.png" style="height: 25px;">
                      Secured All India Rank 228 in <a
                         href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering" target="_blank"> GATE
                     2012 </a> among 1.56 lakh participants of Computer Science &amp;
                     Information Technology department. (2011-2012)
 
                 </blockquote>
-                <blockquote class="collapse multi-collapse">[2012] <img src="assets/images/iitk_logo_black.png" style="height: 25px;"> “Boosting performance of
+                <blockquote class="collapse multi-collapse">[2012] <img loading="lazy" decoding="async" src="assets/images/iitk_logo_black.png" style="height: 25px;"> “Boosting performance of
                     popular queries” acknowledged as the best project by the course professor for CS618 (Indexing and Searching of Databases) course.
                     (2011-2012)
                 </blockquote>
                 <blockquote>
-                    [2011] <a href="http://isro.gov.in" target="_blank"><img src="assets/images/media/isro.png" style="height: 30px;"></a> Achieved All India Rank of 7 in <a href="http://isro.gov.in" target="_blank">Indian Space Research
+                    [2011] <a href="http://isro.gov.in" target="_blank"><img loading="lazy" decoding="async" src="assets/images/media/isro.png" style="height: 30px;"></a> Achieved All India Rank of 7 in <a href="http://isro.gov.in" target="_blank">Indian Space Research
                     Organization (ISRO)</a> recruitment exam. (2011-2012)
 
                 </blockquote>
-                <blockquote>[2011] <img src="assets/images/iitk_logo_black.png" style="height: 25px;"> Secured All India Rank 223 in <a
+                <blockquote>[2011] <img loading="lazy" decoding="async" src="assets/images/iitk_logo_black.png" style="height: 25px;"> Secured All India Rank 223 in <a
                         href="https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering" target="_blank"> GATE
                     2011 </a> among 1.36 lakh participants of Computer
                     Science &amp; Information Technology department. (2010-2011)
 
                 </blockquote>
-                <blockquote class="collapse multi-collapse">[2011] <img src="assets/images/iem.jpg" style="height: 30px;"> Amongst top 10 student of CSE department in <a href="http://iem.edu.in/" target="_blank">
+                <blockquote class="collapse multi-collapse">[2011] <img loading="lazy" decoding="async" src="assets/images/iem.jpg" style="height: 30px;"> Amongst top 10 student of CSE department in <a href="http://iem.edu.in/" target="_blank">
                     Institute of Engineering Management</a>,
                     Kolkata, and awarded academic excellence for performance in B.Tech (2007-2011)
 
@@ -1581,11 +1689,11 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 </blockquote>
                 <blockquote>
                     Awarded 2nd prize for academic excellence in school in Class XII
-                    <img src="assets/images/bms.jpg" style="height: 50px;">
+                    <img loading="lazy" decoding="async" src="assets/images/bms.jpg" style="height: 50px;">
                 </blockquote>
                 <blockquote>
                     Awarded 1st prize for academic excellence in school in Class XI
-                    <img src="assets/images/bms.jpg" style="height: 50px;">
+                    <img loading="lazy" decoding="async" src="assets/images/bms.jpg" style="height: 50px;">
                 </blockquote>
                 <blockquote>
                     Awarded academic excellence certificate in district level for performance in Board Exam
@@ -1642,7 +1750,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item design video">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/election_2016.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/election_2016.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Twitter Election 2016 Sentiment Analysis,
@@ -1668,7 +1776,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item branding">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/musicatlas.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/musicatlas.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">MusicAtlas -
@@ -1698,7 +1806,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/quakeanalysis.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/quakeanalysis.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">QuakeAnalysis</h3>
@@ -1725,7 +1833,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/onlineClustering.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/onlineClustering.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Online Topic Discovery via Online Clustering</h3>
@@ -1752,7 +1860,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/qa_poster.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/qa_poster.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Question Answering System</h3>
@@ -1778,7 +1886,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/metonym.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/metonym.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Metonym:
@@ -1805,7 +1913,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/dartnews.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/dartnews.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Dart News:
@@ -1833,7 +1941,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div  style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/choropleth.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/choropleth.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Choropleth :
@@ -1860,7 +1968,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/intelliad.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/intelliad.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">IntelliAd:
@@ -1891,7 +1999,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/www.jpg" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/www.jpg" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Multi-objective Evolution based Dynamic Job Scheduler in Grid </h3>
@@ -1920,7 +2028,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/RCached.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/RCached.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">RCached-tree:
@@ -1948,7 +2056,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/airquality.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/airquality.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">AirQuality @ Utah</h3>
@@ -1973,7 +2081,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div  style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/statchit.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/statchit.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">STaCHIT :
@@ -2000,7 +2108,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/speech.jpg" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/speech.jpg" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Real time discrimination of Speech and Music</h3>
@@ -2023,7 +2131,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                 <article class="work-item photo">
                     <div class="work-wrapper">
                         <div style="height:250px;" class="work-thumbnail">
-                            <img src="assets/images/projects/fr.png" alt="">
+                            <img loading="lazy" decoding="async" src="assets/images/projects/fr.png" alt="">
                         </div>
                         <div class="work-caption">
                             <h3 class="work-title">Cryptography-Diffie-Hellman Key Exchange Through Elliptic Curve
@@ -2131,12 +2239,14 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
     </section>
     <!-- /PASSION IMAGE -->
 
-    <!-- GOOGLE MAP -->
+    <!-- LOCATION MAP (keyless OpenStreetMap embed — no API key required) -->
     <section class="module-map">
-        <!-- ADD YOUR ADDRESS HERE -->
-        <div id="map" data-address="1 Hacker Way, Menlo Park, CA 94025"></div>
+        <iframe title="Map of the San Francisco Bay Area"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-122.32%2C37.36%2C-122.06%2C37.52&amp;layer=mapnik&amp;marker=37.4848%2C-122.1484"
+                style="border:0; width:100%; height:100%;" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <!-- /GOOGLE MAP -->
+    <!-- /LOCATION MAP -->
 
 
 </div>
@@ -2151,15 +2261,15 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
             <div class="col-sm-12">
                 <div class="social-icons text-center m-t-10 m-b-10">
                     <a href="https://www.linkedin.com/in/debjyotipaul385" target="_blank" alt="facebook"
-                       class="fa fa-linkedin facebook"></a>
+                       aria-label="LinkedIn" class="fa fa-linkedin facebook"></a>
                     <a href="https://github.com/debjyoti385" target="_blank" alt="github"
-                       class="fa fa-github github"></a>
+                       aria-label="GitHub" class="fa fa-github github"></a>
                     <a href="https://www.flickr.com/photos/144241296@N05/albums" target="_blank"
-                       class="fa fa-flickr flickr"></a>
+                       aria-label="Flickr" class="fa fa-flickr flickr"></a>
                     <a href="https://www.instagram.com/wandererdeb/" target="_blank" alt="instagram"
-                       class="fa fa-instagram instagram"></a>
+                       aria-label="Instagram" class="fa fa-instagram instagram"></a>
                     <a href="https://www.facebook.com/wandererdeb" target="_blank" alt="facebook"
-                       class="fa fa-facebook facebook"></a>
+                       aria-label="Facebook" class="fa fa-facebook facebook"></a>
                     <!--<a href="#" target="_blank" alt="google plus" class="fa fa-google-plus google-plus"></a>-->
                     <!--<a href="#" target="_blank" alt="twitter" class="fa fa-twitter twitter"></a>-->
                     <!--<a href="#" target="_blank" class="fa fa-behance behance"></a>-->
@@ -2173,7 +2283,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
                     Copyright &copy 2013 -
                     <span id="copyright_year">
                             <script>document.getElementById('copyright_year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                    </span> All Rights Reserved @<a href="#"><img src="assets/images/plogo_small.png" style="height: 1em; margin-bottom:4px;"></a> (<i>Debjyoti Paul</i>)
+                    </span> All Rights Reserved @<a href="#"><img loading="lazy" decoding="async" src="assets/images/plogo_small.png" style="height: 1em; margin-bottom:4px;"></a> (<i>Debjyoti Paul</i>)
                 </div>
                 <div class="copyright text-center">
                     Videos and pictures are properties of owner and not for reproduction or reuse without owners
@@ -2192,7 +2302,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
 </div>
 
 <!-- JAVASCRIPT FILES -->
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+<!-- removed unused Instagram embeds script (external, render-blocking on slow links) -->
 <script src="assets/js/jquery-2.1.3.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.parallax-1.1.3.js"></script>
@@ -2205,7 +2315,7 @@ Smart databases are adopting artificial intelligence (AI) technologies to achiev
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.fitvids.js"></script>
 <script src="assets/js/jqBootstrapValidation.js"></script>
-<script src="https://maps.google.com/maps/api/js"></script>
+<!-- Google Maps JS API removed: it now requires an API key and showed an error overlay. Map replaced with a keyless OpenStreetMap embed below. -->
 <script src="assets/js/gmap3.min.js"></script>
 <script src="assets/js/appear.js"></script>
 <script src="assets/js/wow.min.js"></script>
@@ -2254,7 +2364,7 @@ $('#news_toggle').click(function(){
     });
 });
 </script>
-<script src="assets/js/debjyotipaulin.js"></script>
+<!-- legacy Universal Analytics (debjyotipaulin.js) removed; GA4 is configured in <head> -->
 </body>
 
 </html>

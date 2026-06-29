@@ -1,0 +1,178 @@
+/* =============================================================
+   responsive-fixes.css
+   Mobile-friendly / responsive overrides for debjyotipaul.in
+   Loaded AFTER style.css so these rules win. Theme is unchanged;
+   this only fixes layout/behaviour on small screens.
+   ============================================================= */
+
+/* ---- 0. Global guards: stop horizontal scroll on phones -------- */
+html,
+body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%; /* keep text size after orientation change */
+}
+
+/* Never let a stray image push the page wider than the screen.
+   (Logos with explicit height keep their aspect ratio via height:auto.) */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---- 1. Parallax: background-attachment:fixed is broken/janky on
+        iOS Safari and most mobile browsers. Fall back to scroll. ---- */
+@media (max-width: 1024px) {
+    .module-parallax {
+        background-attachment: scroll !important;
+    }
+}
+
+/* ---- 2. Hero -------------------------------------------------- */
+/* The scroll cue used an inline margin-top:300px; that block now uses
+   the .hero-scroll class (set in index-preview.html) so we can make it
+   responsive. */
+.hero-scroll {
+    margin-top: 300px;
+}
+
+@media (max-width: 991px) {
+    .hero-scroll { margin-top: 160px; }
+}
+
+@media (max-width: 767px) {
+    .hero-caption { width: 92%; }
+    .hero-title  { line-height: 1.3; }
+    .hero-scroll { margin-top: 90px; }
+}
+
+/* Very short viewports (landscape phones): keep the cue on-screen */
+@media (max-height: 640px) {
+    .hero-scroll { margin-top: 60px; }
+}
+
+/* ---- 3. Intro: show the photo + center things on small screens --- */
+/* The profile photo wrapper was hidden-sm hidden-xs (invisible on
+   phones/tablets). In the preview it now uses .profile-photo so it
+   stays visible and scales. */
+.profile-photo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-photo img {
+    width: 220px;
+    max-width: 55%;
+}
+
+@media (max-width: 991px) {
+    /* Center the intro text block once columns stack */
+    #intro .row { margin-top: 0 !important; }
+    #intro h3,
+    #intro h6 { text-align: center; }
+    #intro .col-md-6 > div { margin: 0 !important; }
+    #intro p.shiftup-20 { text-align: left; }
+    .social-icons { margin-top: 20px; }
+}
+
+@media (max-width: 767px) {
+    /* !important needed to override the inline width:250px on the <img> */
+    .profile-photo img { width: 180px !important; max-width: 60%; }
+}
+
+/* ---- 4. Section padding: the template uses big fixed paddings that
+        waste space on phones. Tighten them up. -------------------- */
+@media (max-width: 767px) {
+    .module,
+    .module-sm,
+    .footer { padding: 70px 0; }
+
+    .navbar-custom + .wrapper .module:first-child { padding-top: 120px; }
+    .navbar-custom + .wrapper .module-sm:first-child { padding-top: 90px; }
+
+    .module-title,
+    .module-subtitle { margin-bottom: 40px; font-size: 26px; }
+}
+
+/* ---- 5. Timeline: keep the date label from overlapping the entry
+        heading on narrow screens (template only handled items 1-7, and
+        its nth-child rules out-rank a plain selector, so we match the
+        same nth-child selectors here and load later to win). --------- */
+@media (max-width: 945px) {
+    .timeline {
+        padding: 20px 10px 20px 14px;
+        margin-left: 4px;
+    }
+    /* place the date chip at the very top-left of EVERY entry ... */
+    .timeline .event::before,
+    .timeline .event:nth-child(1)::before,
+    .timeline .event:nth-child(2)::before,
+    .timeline .event:nth-child(3)::before,
+    .timeline .event:nth-child(4)::before,
+    .timeline .event:nth-child(5)::before,
+    .timeline .event:nth-child(6)::before,
+    .timeline .event:nth-child(7)::before,
+    .timeline .event:nth-child(8)::before {
+        left: 2px;
+        top: 0;
+        min-width: 0;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    /* ... and push the entry's content below that chip */
+    .timeline .event { padding-top: 26px; }
+    .timeline .profile-content { margin-bottom: 0; }
+    .timeline .profile-content h6 { margin: 0 0 4px; }
+    /* neutralise the desktop .shiftup-* negative margins (and the inline
+       margin-bottom:-25px) that otherwise collapse these lines on mobile */
+    .timeline .profile-content p {
+        margin: 0 0 6px !important;
+        padding-top: 0;
+        line-height: 1.45;
+    }
+}
+
+/* ---- 6. Publications: long author lists / monospace BibTeX must not
+        overflow the viewport. ------------------------------------- */
+#publication_text h5,
+#publication_text h6,
+#publication_text p { overflow-wrap: break-word; word-wrap: break-word; }
+
+#publication_text blockquote p {
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+/* BibTeX blocks are monospace with hard line breaks; let them scroll
+   horizontally instead of stretching the page. */
+#publication_text blockquote p[style*="Courier"] {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ---- 7. News / achievements: media-coverage logos wrap cleanly --- */
+@media (max-width: 767px) {
+    #achievements_text blockquote { font-size: 14px; }
+    #achievements_text blockquote img { margin: 2px 0; }
+}
+
+/* ---- 8. Projects grid: one clean column on phones --------------- */
+@media (max-width: 767px) {
+    .work-item { width: 100% !important; }
+    .work-thumbnail { height: auto !important; }
+    .work-thumbnail img { width: 100%; }
+}
+
+/* ---- 9. Footer: the fixed "reveal" footer can cover content on
+        tablets; make it flow normally below the laptop breakpoint. - */
+@media (max-width: 991px) {
+    .footer { position: relative; }
+}
+
+/* ---- 10. Navbar: comfortable tap targets for the mobile menu ----- */
+@media (max-width: 991px) {
+    .navbar-custom .navbar-nav > li > a {
+        font-size: 15px;
+    }
+    .navbar-toggle { margin-right: 12px; }
+}
